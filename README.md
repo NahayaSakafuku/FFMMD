@@ -28,12 +28,12 @@
 3. 保存;在 Dalamud 插件列表搜索 FFMMD 并安装。
 
 **国内网络镜像**(jsDelivr,版本化标签):
-`https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.0.0/repo.json`
+`https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.1.0/repo.json`
 
 ### 方式二:手动安装
 
 从 [Releases](https://github.com/NahayaSakafuku/FFMMD/releases) 下载 `latest.zip`,解压到
-`%APPDATA%\XIVLauncherCN\installedPlugins\FFMMD\1.0.0.0\`,重启游戏后在 `/xlplugins` 启用。
+`%APPDATA%\XIVLauncherCN\installedPlugins\FFMMD\<版本>\`,重启游戏后在 `/xlplugins` 启用。
 
 ## 构建
 
