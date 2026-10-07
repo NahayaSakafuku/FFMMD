@@ -8,10 +8,10 @@
     "DalamudApiLevel": 15,
     "Punchline": "游戏内 VMD/MMD 动作播放 + 音乐配乐",
     "AssemblyVersion": "1.0.0.0",
-    "RepoUrl": "https://github.com/eayu-nsyf/FFMMD",
-    "DownloadLinkInstall": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
-    "DownloadLinkUpdate": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
-    "DownloadLinkTesting": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "RepoUrl": "https://github.com/NahayaSakafuku/FFMMD",
+    "DownloadLinkInstall": "https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "DownloadLinkUpdate": "https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "DownloadLinkTesting": "https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
     "Tags": ["animation", "music", "gpose"]
   }
 ]

@@ -26,15 +26,15 @@
 
 1. 游戏内输入 `/xlsettings`,进入 实验性(Experimental) 选项卡;
 2. 在 自定义插件仓库(Custom Plugin Repositories) 中添加:
-   `https://raw.githubusercontent.com/eayu-nsyf/FFMMD/main/repo.json`
+   `https://raw.githubusercontent.com/NahayaSakafuku/FFMMD/main/repo.json`
 3. 保存;在 Dalamud 插件列表搜索 FFMMD 并安装。
 
 **国内网络镜像**(jsDelivr,版本化标签):
-`https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/repo.json`
+`https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.0.0.0/repo.json`
 
 ### 方式二:手动安装
 
-从 [Releases](https://github.com/eayu-nsyf/FFMMD/releases) 下载 `latest.zip`,解压到
+从 [Releases](https://github.com/NahayaSakafuku/FFMMD/releases) 下载 `latest.zip`,解压到
 `%APPDATA%\XIVLauncherCN\installedPlugins\FFMMD\1.0.0.0\`,重启游戏后在 `/xlplugins` 启用。
 
 ## 构建
