@@ -1,0 +1,12 @@
+{
+    "Author": "NahayaSakafuku",
+    "Name": "FFMMD",
+    "InternalName": "FFMMD",
+    "Description": "在游戏内直接导入 VMD（MMD 动作）并驱动角色骨骼播放，无需 Blender。仅限摄影（GPose）用途。/ Import VMD (MMD motion) files and play them on characters in-game, no Blender needed.",
+    "ApplicableVersion": "any",
+    "Punchline": "游戏内 VMD/MMD 动作播放",
+    "RepoUrl": "https://github.com/eayu-nsyf/FFMMD",
+    "AcceptsFeedback": false,
+    "DalamudApiLevel": 15,
+    "Version": "1.0.0.0"
+}

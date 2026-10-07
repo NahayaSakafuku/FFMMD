@@ -1,0 +1,17 @@
+[
+  {
+    "Author": "NahayaSakafuku",
+    "Name": "FFMMD",
+    "InternalName": "FFMMD",
+    "Description": "在游戏内直接导入 VMD(MMD 动作)并驱动角色骨骼播放,无需 Blender;可导入本地音乐同步播放,支持快捷键与原生声音屏蔽。仅限摄影(GPose)用途。/ Import VMD (MMD motion) files and play them on characters in-game, no Blender needed; local music playback with hotkeys and game audio muting.",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "Punchline": "游戏内 VMD/MMD 动作播放 + 音乐配乐",
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/eayu-nsyf/FFMMD",
+    "DownloadLinkInstall": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "DownloadLinkUpdate": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "DownloadLinkTesting": "https://cdn.jsdelivr.net/gh/eayu-nsyf/FFMMD@v1.0.0.0/dist/FFMMD-1.0.0.0.zip",
+    "Tags": ["animation", "music", "gpose"]
+  }
+]
