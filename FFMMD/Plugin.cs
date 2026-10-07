@@ -45,7 +45,7 @@ public class FFMMDPlugin : IDalamudPlugin
             Player.TransportChanged += Music.OnTransport;
             EzConfigGui.Init(UI.MainWindow.Draw);
             EzConfigGui.Window.SetMinSize(560, 420);
-            EzCmd.Add("/ffmmd", ToggleUi, "打开 FFMMD 播放器");
+            EzCmd.Add("/ffmmd", ToggleUi, Loc.S.CmdDesc);
             PluginLog.Information($"[FFMMD] 初始化完成。骨骼Hook: {(Applier.Available ? "OK" : "未命中: " + Applier.Error)}");
         });
     }

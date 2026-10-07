@@ -25,11 +25,33 @@ public static class MainWindow
 
     private static void DrawStatusLine()
     {
-        ImGuiEx.Text(ImGuiColors.ParsedGreen, P.Applier.Available ? "骨骼Hook正常" : $"骨骼Hook未命中：{P.Applier.Error}");
+        ImGuiEx.Text(ImGuiColors.ParsedGreen, P.Applier.Available ? Loc.S.HookOk : string.Format(Loc.S.HookMissing, P.Applier.Error));
         ImGui.SameLine();
-        ImGuiEx.Text(ImGuiColors.DalamudGrey, Player.TargetValid ? $"目标: {Player.TargetName}" : "目标: 无（选一个角色）");
+        ImGuiEx.Text(ImGuiColors.DalamudGrey, Player.TargetValid ? string.Format(Loc.S.TargetName, Player.TargetName) : Loc.S.TargetNone);
         ImGui.SameLine();
-        ImGuiEx.Text(Svc.ClientState.IsGPosing ? ImGuiColors.ParsedGreen : ImGuiColors.DalamudGrey, "GPose");
+        ImGuiEx.Text(Svc.ClientState.IsGPosing ? ImGuiColors.ParsedGreen : ImGuiColors.DalamudGrey, Loc.S.GposeLabel);
+        DrawLanguagePicker();
+    }
+
+    /// <summary> 顶栏语言切换:切换即时生效并记住选择;Auto 按客户端语言判定。 </summary>
+    private static void DrawLanguagePicker()
+    {
+        var s = Loc.S;
+        var lang = P.Config.Language;
+        var current = lang switch { 1 => s.LangChinese, 2 => s.LangEnglish, _ => s.LangAuto };
+        ImGui.SameLine();
+        ImGui.SetNextItemWidth(130);
+        if (ImGui.BeginCombo(s.LangLabel + "##ffmmd-lang", current))
+        {
+            foreach (var (value, name) in new[] { (0, s.LangAuto), (1, s.LangChinese), (2, s.LangEnglish) })
+                if (ImGui.Selectable(name, lang == value) && lang != value)
+                {
+                    P.Config.Language = value;
+                    P.ConfigDirty = true;
+                    Loc.Invalidate();
+                }
+            ImGui.EndCombo();
+        }
     }
 
     private static void DrawPlayerSection()
@@ -37,24 +59,24 @@ public static class MainWindow
         DrawTargetSelector();
 
         // 文件加载
-        var loaded = Player.LoadedPath == null ? "未加载动作" : Path.GetFileName(Player.LoadedPath);
-        if (ImGui.Button("导入VMD…")) PickVmdFile();
+        var loaded = Player.LoadedPath == null ? Loc.S.NoMotionLoaded : Path.GetFileName(Player.LoadedPath);
+        if (ImGui.Button(Loc.S.ImportVmd)) PickVmdFile();
         ImGui.SameLine();
         ImGuiEx.Text(Player.LoadError != null ? ImGuiColors.DalamudRed : ImGuiColors.DalamudGrey,
-            Player.LoadError != null ? $"加载失败: {Player.LoadError}" : loaded);
+            Player.LoadError != null ? string.Format(Loc.S.LoadFailed, Player.LoadError) : loaded);
 
         if (Player.Anim != null)
         {
             // 走带控制
-            if (ImGui.Button("▶ 播放")) Player.Play();
+            if (ImGui.Button(Loc.S.Play)) Player.Play();
             ImGui.SameLine();
             var paused = Player.Paused;
-            if (ImGui.Checkbox("暂停", ref paused)) Player.SetPaused(paused);
+            if (ImGui.Checkbox(Loc.S.Pause, ref paused)) Player.SetPaused(paused);
             ImGui.SameLine();
-            if (ImGui.Button("停止")) Player.Stop();
+            if (ImGui.Button(Loc.S.Stop)) Player.Stop();
             ImGui.SameLine();
             var loop = P.Config.Loop;
-            if (ImGui.Checkbox("循环", ref loop))
+            if (ImGui.Checkbox(Loc.S.Loop, ref loop))
             {
                 P.Config.Loop = loop;
                 P.ConfigDirty = true;
@@ -62,76 +84,81 @@ public static class MainWindow
 
             var speed = P.Config.Speed;
             ImGui.SetNextItemWidth(220);
-            if (ImGui.SliderFloat("速度", ref speed, 0.25f, 4f, "%.2fx"))
+            if (ImGui.SliderFloat(Loc.S.Speed, ref speed, 0.25f, 4f, "%.2fx"))
                 Player.SetSpeed(speed);
 
             var dur = Player.Anim.DurationSec;
             var t = (float)Player.TimeSec;
             ImGui.SetNextItemWidth(-1);
-            if (dur > 0 && ImGui.SliderFloat($"进度  {t:0.00}s / {dur:0.00}s（第 {Player.TimeSec * Vmd.VmdAnimation.FramesPerSecond:0} 帧）", ref t, 0f, dur, "%.2f"))
+            if (dur > 0 && ImGui.SliderFloat(string.Format(Loc.S.Progress, t, dur, Player.TimeSec * Vmd.VmdAnimation.FramesPerSecond), ref t, 0f, dur, "%.2f"))
                 Player.Seek(t);
         }
 
         var autoOpen = P.Config.AutoOpenInGPose;
-        if (ImGui.Checkbox("进入 GPose 时自动弹出窗口", ref autoOpen))
+        if (ImGui.Checkbox(Loc.S.AutoOpenGpose, ref autoOpen))
         {
             P.Config.AutoOpenInGPose = autoOpen;
             P.ConfigDirty = true;
         }
 
         // 全局快捷键:窗口关闭时仍有效,由 VmdPlayerService 在 Tick 中检测按下沿。
-        ImGui.TextUnformatted("快捷键");
+        ImGui.TextUnformatted(Loc.S.Hotkeys);
         ImGui.SameLine();
-        DrawHotkeyPicker("播放##hkPlay", P.Config.PlayHotkey, v => { P.Config.PlayHotkey = v; P.ConfigDirty = true; });
+        DrawHotkeyPicker(Loc.S.HkPlay + "##hkPlay", P.Config.PlayHotkey, v => { P.Config.PlayHotkey = v; P.ConfigDirty = true; });
         ImGui.SameLine();
-        DrawHotkeyPicker("暂停##hkPause", P.Config.PauseHotkey, v => { P.Config.PauseHotkey = v; P.ConfigDirty = true; });
+        DrawHotkeyPicker(Loc.S.HkPause + "##hkPause", P.Config.PauseHotkey, v => { P.Config.PauseHotkey = v; P.ConfigDirty = true; });
         ImGui.SameLine();
-        DrawHotkeyPicker("停止##hkStop", P.Config.StopHotkey, v => { P.Config.StopHotkey = v; P.ConfigDirty = true; });
+        DrawHotkeyPicker(Loc.S.HkStop + "##hkStop", P.Config.StopHotkey, v => { P.Config.StopHotkey = v; P.ConfigDirty = true; });
         if (ImGui.IsItemHovered())
-            ImGui.SetTooltip("窗口关闭时也可用;设为\"无\"可禁用。\n播放键在暂停时恢复、播放中不重复触发;暂停键为切换。\n建议使用小键盘键,聊天打字不会误触。");
-        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey,
-            "播放键:暂停中恢复,未播放时从头开始;暂停键:切换;停止键:停止并复位。");
+            ImGui.SetTooltip(Loc.S.HkTip);
+        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, Loc.S.HkHelp);
     }
 
-    private static readonly (int Key, string Label)[] HotkeyOptions =
-    [
-        (0, "无"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD0, "小键盘 0"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD1, "小键盘 1"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD2, "小键盘 2"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD3, "小键盘 3"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD4, "小键盘 4"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD5, "小键盘 5"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD6, "小键盘 6"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD7, "小键盘 7"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD8, "小键盘 8"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD9, "小键盘 9"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F5, "F5"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F6, "F6"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F7, "F7"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F8, "F8"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F9, "F9"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F10, "F10"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F11, "F11"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F12, "F12"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.PRIOR, "PageUp"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NEXT, "PageDown"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.END, "End"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.HOME, "Home"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.INSERT, "Insert"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.DELETE, "Delete"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.OEM_PLUS, "+"),
-        ((int)Dalamud.Game.ClientState.Keys.VirtualKey.OEM_MINUS, "-"),
-    ];
+    /// <summary> 快捷键选项;标签随语言构建(UI 每帧调用,数量固定,分配可忽略)。 </summary>
+    private static (int Key, string Label)[] HotkeyOptions()
+    {
+        var s = Loc.S;
+        return
+        [
+            (0, s.HkNone),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD0, $"{s.HkNumpad} 0"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD1, $"{s.HkNumpad} 1"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD2, $"{s.HkNumpad} 2"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD3, $"{s.HkNumpad} 3"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD4, $"{s.HkNumpad} 4"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD5, $"{s.HkNumpad} 5"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD6, $"{s.HkNumpad} 6"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD7, $"{s.HkNumpad} 7"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD8, $"{s.HkNumpad} 8"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NUMPAD9, $"{s.HkNumpad} 9"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F5, "F5"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F6, "F6"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F7, "F7"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F8, "F8"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F9, "F9"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F10, "F10"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F11, "F11"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.F12, "F12"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.PRIOR, "PageUp"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.NEXT, "PageDown"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.END, "End"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.HOME, "Home"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.INSERT, "Insert"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.DELETE, "Delete"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.OEM_PLUS, "+"),
+            ((int)Dalamud.Game.ClientState.Keys.VirtualKey.OEM_MINUS, "-"),
+        ];
+    }
 
     private static void DrawHotkeyPicker(string label, int current, Action<int> set)
     {
-        var index = Array.FindIndex(HotkeyOptions, o => o.Key == current);
+        var options = HotkeyOptions();
+        var index = Array.FindIndex(options, o => o.Key == current);
         if (index < 0) index = 0;
         ImGui.SetNextItemWidth(96);
-        var items = string.Join('\0', HotkeyOptions.Select(o => o.Label)) + '\0';
+        var items = string.Join('\0', options.Select(o => o.Label)) + '\0';
         if (ImGui.Combo(label, ref index, items))
-            set(HotkeyOptions[index].Key);
+            set(options[index].Key);
     }
 
     /// <summary> 音乐区:导入/清除/启用、音量与偏移。播放、暂停、进度、循环全部跟随动画 transport。 </summary>
@@ -139,19 +166,19 @@ public static class MainWindow
     {
         var music = P.Music;
         if (music == null) return;
-        ImGui.TextUnformatted("音乐");
+        ImGui.TextUnformatted(Loc.S.MusicTitle);
         ImGui.SameLine();
-        if (ImGui.Button("导入音乐…")) PickMusicFile();
+        if (ImGui.Button(Loc.S.ImportMusic)) PickMusicFile();
         ImGui.SameLine();
-        if (ImGui.Button("清除音乐")) music.ImportMusic(null);
+        if (ImGui.Button(Loc.S.ClearMusic)) music.ImportMusic(null);
         ImGui.SameLine();
         var enabled = P.Config.MusicEnabled;
-        if (ImGui.Checkbox("启用音乐", ref enabled)) music.SetEnabled(enabled);
+        if (ImGui.Checkbox(Loc.S.MusicEnabled, ref enabled)) music.SetEnabled(enabled);
 
         ImGuiEx.Text(music.Error != null ? ImGuiColors.DalamudRed : ImGuiColors.DalamudGrey,
-            music.Error != null ? $"音乐错误: {music.Error}"
+            music.Error != null ? string.Format(Loc.S.MusicError, music.Error)
             : music.CurrentPath != null ? Path.GetFileName(music.CurrentPath)
-            : "未导入音乐(wav / ogg / mp3)");
+            : Loc.S.MusicNone);
 
         var volume = P.Config.MusicVolume;
         ImGui.SetNextItemWidth(190);
@@ -162,7 +189,7 @@ public static class MainWindow
         if (ImGui.InputFloat("##音乐音量输入", ref volume, 0f, 0f, "%.2f"))
             music.SetVolume(volume);
         ImGui.SameLine();
-        ImGui.TextUnformatted("音乐音量");
+        ImGui.TextUnformatted(Loc.S.MusicVolume);
 
         var offset = P.Config.MusicOffsetSec;
         ImGui.SetNextItemWidth(190);
@@ -184,45 +211,45 @@ public static class MainWindow
         if (sliderDeactivated || ImGui.IsItemDeactivatedAfterEdit())
             music.SetOffset(offset);
         ImGui.SameLine();
-        ImGui.TextUnformatted("音乐偏移(秒)");
+        ImGui.TextUnformatted(Loc.S.MusicOffset);
         ImGui.SameLine();
-        if (ImGui.Button("恢复默认"))
+        if (ImGui.Button(Loc.S.ResetDefaults))
         {
             music.SetVolume(0.8f);
             music.SetOffset(0);
         }
-        if (ImGui.IsItemHovered()) ImGui.SetTooltip("音量 0.80,偏移 0.00");
+        if (ImGui.IsItemHovered()) ImGui.SetTooltip(Loc.S.ResetDefaultsTip);
 
         var muteGame = P.Config.MuteGameAudioWhilePlaying;
-        if (ImGui.Checkbox("播放音乐时屏蔽游戏原生声音", ref muteGame))
+        if (ImGui.Checkbox(Loc.S.MuteGameAudio, ref muteGame))
         {
             P.Config.MuteGameAudioWhilePlaying = muteGame;
             P.ConfigDirty = true;
         }
         if (ImGui.IsItemHovered())
-            ImGui.SetTooltip("音乐出声期间把游戏主音量临时归零(BGM/音效/环境/系统音全部静音);\n暂停、停止、结束或卸载后自动恢复原值。插件音乐走独立音频设备,不受影响。\n若游戏在屏蔽期间崩溃退出,配置不会写盘;万一主音量异常,在游戏系统设置调回即可。");
+            ImGui.SetTooltip(Loc.S.MuteGameAudioTip);
         ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey,
-            "音频位置 = 动画时间 + 偏移:正值跳过音轨开头,负值音乐延后进入。拖动后松开鼠标或直接键入数值生效。播放、暂停、进度、循环和速度全部跟随动画(速度变化时音调同步变化)。");
+            Loc.S.MusicHelp);
     }
 
     private static void DrawTargetSelector()
     {
-        ImGui.TextUnformatted("播放目标");
+        ImGui.TextUnformatted(Loc.S.TargetModeTitle);
         ImGui.SameLine();
         var mode = P.Config.TargetMode;
-        if (ImGui.RadioButton("自己", mode == 0))
+        if (ImGui.RadioButton(Loc.S.TargetSelf, mode == 0))
         {
             P.Config.TargetMode = 0;
             P.ConfigDirty = true;
         }
         ImGui.SameLine();
-        if (ImGui.RadioButton("当前目标", mode == 1))
+        if (ImGui.RadioButton(Loc.S.TargetCurrent, mode == 1))
         {
             P.Config.TargetMode = 1;
             P.ConfigDirty = true;
         }
         ImGui.SameLine();
-        if (ImGui.RadioButton("附近角色", mode == 2))
+        if (ImGui.RadioButton(Loc.S.TargetNearby, mode == 2))
         {
             P.Config.TargetMode = 2;
             P.ConfigDirty = true;
@@ -232,12 +259,12 @@ public static class MainWindow
         {
             var nearby = Player.GetNearbyPlayers();
             var current = nearby.FirstOrDefault(x => x.Id == P.Config.NearbyObjectId);
-            var preview = current.Id == 0 ? "选择角色…" : $"{current.Name}";
+            var preview = current.Id == 0 ? Loc.S.PickNearby : current.Name;
             ImGui.SetNextItemWidth(260);
             if (ImGui.BeginCombo("##nearby", preview))
             {
                 foreach (var (id, name, dist) in nearby)
-                    if (ImGui.Selectable($"{name} ({dist:0.0}m)##{id}", id == P.Config.NearbyObjectId))
+                    if (ImGui.Selectable($"{string.Format(Loc.S.NearbyDist, name, dist)}##{id}", id == P.Config.NearbyObjectId))
                     {
                         P.Config.NearbyObjectId = id;
                         P.ConfigDirty = true;
@@ -254,8 +281,8 @@ public static class MainWindow
             ofn => new TickScheduler(() => Player.PendingLoadPath = ofn.file),
             null,
             string.IsNullOrEmpty(initialDir) ? null : Path.GetDirectoryName(initialDir),
-            "选择 VMD 动作文件",
-            [("VMD 动作", new[] { "vmd" })]);
+            Loc.S.PickVmdTitle,
+            [(Loc.S.VmdFilter, new[] { "vmd" })]);
     }
 
     private static void PickMusicFile()
@@ -265,25 +292,30 @@ public static class MainWindow
             ofn => new TickScheduler(() => P.Music?.ImportMusic(ofn.file)),
             null,
             string.IsNullOrEmpty(initialDir) ? null : Path.GetDirectoryName(initialDir),
-            "选择音乐文件",
-            [("音频(wav / ogg / mp3)", new[] { "wav", "ogg", "mp3" })]);
+            Loc.S.PickMusicTitle,
+            [(Loc.S.MusicFilter, new[] { "wav", "ogg", "mp3" })]);
     }
 
     private static void DrawCalibrationSection()
     {
-        if (!ImGui.CollapsingHeader("源骨架与动作适配")) return;
-        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, Player.Retargeter.SourceStatus);
+        if (!ImGui.CollapsingHeader(Loc.S.CalSection)) return;
+        var s = Loc.S;
+        var rig = Player.Retargeter.SourceRig;
+        var srcStatus = rig == null ? s.SourceNone
+            : rig.Approximate ? string.Format(s.SourceApprox, rig.Name)
+            : string.Format(s.SourcePmxStatus, rig.Name);
+        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, srcStatus);
         var preset = Cal.SourceRestPose;
         ImGui.BeginDisabled(Player.SourcePmxPath != null);
-        if (ImGui.Combo("标准骨架参考姿态", ref preset, "A 姿态\0T 姿态\0"))
+        if (ImGui.Combo(s.StandardPose, ref preset, $"{s.StandardPoseA}\0{s.StandardPoseT}\0"))
         { Cal.SourceRestPose = preset; P.ConfigDirty = true; }
         ImGui.EndDisabled();
         ImGui.BeginDisabled(Player.Anim == null);
-        if (ImGui.Button("选择源 PMX（可选）…"))
+        if (ImGui.Button(s.PickSourcePmx))
             OpenFileDialog.SelectFile(ofn => new TickScheduler(() => Player.PendingPmxPath = ofn.file), null,
-                Player.SourcePmxPath == null ? null : Path.GetDirectoryName(Player.SourcePmxPath), "选择动作对应的源 PMX", [("MMD 模型", new[] { "pmx" })]);
+                Player.SourcePmxPath == null ? null : Path.GetDirectoryName(Player.SourcePmxPath), s.PickPmxTitle, [(s.PmxFilter, new[] { "pmx" })]);
         ImGui.SameLine();
-        if (ImGui.Button("使用标准骨架")) Player.UseStandardSource();
+        if (ImGui.Button(s.UseStandardSource)) Player.UseStandardSource();
         ImGui.EndDisabled();
         if (Player.SourcePmxPath != null) ImGui.TextUnformatted(Path.GetFileName(Player.SourcePmxPath));
         if (Player.SourceError != null) ImGuiEx.TextWrapped(ImGuiColors.DalamudRed, Player.SourceError);
@@ -291,54 +323,55 @@ public static class MainWindow
             foreach (var warning in source.Warnings.Take(8)) ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, warning);
         var yaw = Cal.YawDegrees;
         ImGui.SetNextItemWidth(260);
-        if (ImGui.SliderFloat("整体朝向 (°)", ref yaw, -180, 180, "%.0f°")) { Cal.YawDegrees = yaw; P.ConfigDirty = true; }
+        if (ImGui.SliderFloat(s.YawDegrees, ref yaw, -180, 180, "%.0f°")) { Cal.YawDegrees = yaw; P.ConfigDirty = true; }
         var amplitude = Cal.MotionScale;
         ImGui.SetNextItemWidth(260);
-        if (ImGui.SliderFloat("动作幅度", ref amplitude, 0, 1, "%.2f")) { Cal.MotionScale = amplitude; P.ConfigDirty = true; }
+        if (ImGui.SliderFloat(s.MotionScale, ref amplitude, 0, 1, "%.2f")) { Cal.MotionScale = amplitude; P.ConfigDirty = true; }
         var auto = Cal.AutoPositionScale;
-        if (ImGui.Checkbox("自动换算整体位移（按实际腿长）", ref auto)) { Cal.AutoPositionScale = auto; P.ConfigDirty = true; }
+        if (ImGui.Checkbox(s.AutoPosScale, ref auto)) { Cal.AutoPositionScale = auto; P.ConfigDirty = true; }
         ImGui.BeginDisabled(auto);
         var manual = Cal.ManualPositionScale;
         ImGui.SetNextItemWidth(260);
-        if (ImGui.SliderFloat("整体位移系数", ref manual, 0, .5f, "%.3f")) { Cal.ManualPositionScale = manual; P.ConfigDirty = true; }
+        if (ImGui.SliderFloat(s.ManualPosScale, ref manual, 0, .5f, "%.3f")) { Cal.ManualPositionScale = manual; P.ConfigDirty = true; }
         ImGui.EndDisabled();
-        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, "以 n_root 为放置基准；保留质心蹲起和跳跃，水平移动不改变放置高度。");
+        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, s.PlacementHint);
         var height = Cal.HeightOffset;
         ImGui.SetNextItemWidth(260);
-        if (ImGui.DragFloat("根骨离地高度偏移", ref height, .01f, -3, 3, "%.2f")) { Cal.HeightOffset = float.IsFinite(height)?Math.Clamp(height,-3,3):0; P.ConfigDirty = true; }
+        if (ImGui.DragFloat(s.HeightOffset, ref height, .01f, -3, 3, "%.2f")) { Cal.HeightOffset = float.IsFinite(height)?Math.Clamp(height,-3,3):0; P.ConfigDirty = true; }
         ImGui.SameLine();
-        if (ImGui.Button("高度归零")) { Cal.HeightOffset = 0; P.ConfigDirty = true; }
-        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, "正值抬高，负值降低；只移动整个人物，不写入骨骼缩放。");
-        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, "位移系数只影响整体移动和升降；腿姿按源解算姿态与目标腿长适配。");
+        if (ImGui.Button(s.HeightReset)) { Cal.HeightOffset = 0; P.ConfigDirty = true; }
+        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, s.HeightHint);
+        ImGuiEx.TextWrapped(ImGuiColors.DalamudGrey, s.PosScaleHint);
         var mode = Cal.LegIkMode;
-        if (ImGui.Combo("源骨架 IK", ref mode, "关闭（FK）\0强制启用\0按动作开关（推荐）\0")) { Cal.LegIkMode = mode; P.ConfigDirty = true; }
+        if (ImGui.Combo(s.LegIkTitle, ref mode, $"{s.LegIkFk}\0{s.LegIkForce}\0{s.LegIkVmd}\0")) { Cal.LegIkMode = mode; P.ConfigDirty = true; }
     }
 
     private static void DrawDebugSection()
     {
-        if (!ImGui.CollapsingHeader("调试：骨架 dump 与映射状态")) return;
+        var s = Loc.S;
+        if (!ImGui.CollapsingHeader(s.DebugSection)) return;
         var r = Player.Retargeter;
-        if (ImGui.Button("导出当前帧诊断（暂停播放）")) Player.RequestDiagnostics();
+        if (ImGui.Button(s.ExportDiag)) Player.RequestDiagnostics();
         if (Player.DiagnosticStatus != null) ImGuiEx.TextWrapped(Player.DiagnosticStatus);
         if (Player.ScaleAuditStatus != null) ImGuiEx.TextWrapped(Player.ScaleAuditStatus);
-        ImGui.TextUnformatted("视频对照时间：");
+        ImGui.TextUnformatted(s.VideoTimes);
         foreach (var time in new[] { 26.16, 31.17, 41.17, 46.17 })
         {
             ImGui.SameLine();
             if (ImGui.Button($"{time:0.00}s")) { Player.SetPaused(true); Player.Seek(time); }
         }
 
-        ImGui.TextUnformatted("四指／高度对照时间：");
+        ImGui.TextUnformatted(s.FingerTimes);
         foreach (var time in new[] { 58.9601767, 86.5599933, 142.6141433 })
         {
             ImGui.SameLine();
             if (ImGui.Button($"{time:0.00}s##finger")) { Player.SetPaused(true); Player.Seek(time); }
         }
 
-        if (ImGui.Button("读取目标骨架"))
+        if (ImGui.Button(s.ReadSkeleton))
             Player.TryBuildDebugTree();
         ImGui.SameLine();
-        if (ImGui.Button("检查当前帧"))
+        if (ImGui.Button(s.CheckFrame))
         {
             _diagLines = Player.DiagnoseCurrentFrame();
         }
@@ -349,36 +382,37 @@ public static class MainWindow
         var tree = r.Tree;
         if (tree == null)
         {
-            ImGuiEx.Text(ImGuiColors.DalamudGrey, "尚无骨架缓存：选定目标后点上面的按钮，或播放一次。");
+            ImGuiEx.Text(ImGuiColors.DalamudGrey, s.NoSkelCache);
             return;
         }
 
-        ImGuiEx.Text(ImGuiColors.ParsedGreen, $"骨架: {tree.BoneCount} 根骨骼（partial 0）  重心骨: {(r.CenterBoneIndex >= 0 ? tree.Names[r.CenterBoneIndex] : "未找到")}" +
-                                                $"  实际腿长位移比例: {r.AutoPosScale:0.0000}");
+        ImGuiEx.Text(ImGuiColors.ParsedGreen, string.Format(s.SkelSummary, tree.BoneCount,
+            r.CenterBoneIndex >= 0 ? tree.Names[r.CenterBoneIndex] : "?", r.AutoPosScale));
         if (Player.Anim != null)
         {
-            ImGuiEx.Text(ImGuiColors.ParsedGreen, $"目标关节适配: {r.Mapped.Count} 根  " +
-                                                $"源骨架未覆盖的 VMD 轨道: {r.UnmappedMmd.Count} 条");
-            if (r.UnmappedMmd.Count > 0 && ImGui.TreeNode("未映射的 MMD 骨骼轨道"))
+            ImGuiEx.Text(ImGuiColors.ParsedGreen, string.Format(s.MappedSummary, r.Mapped.Count, r.UnmappedMmd.Count));
+            if (r.UnmappedMmd.Count > 0 && ImGui.TreeNode(string.Format(s.UnmappedTitle, r.UnmappedMmd.Count)))
             {
                 ImGuiEx.TextWrapped(string.Join("、", r.UnmappedMmd.Take(60)));
                 ImGui.TreePop();
             }
-            if (r.Mapped.Count > 0 && ImGui.TreeNode("映射明细"))
+            if (r.Mapped.Count > 0 && ImGui.TreeNode(s.MappingDetail))
             {
                 foreach (var m in r.Mapped)
                     ImGuiEx.Text(m.Track != null ? ImGuiColors.ParsedGreen : ImGuiColors.DalamudGrey,
-                        $"{m.SourceJp} → {m.FfName}{(m.Track != null ? $"（{m.Track.Keys.Count} 关键帧，参与源解算）" : "（源解算／继承姿态）")}");
+                        m.Track != null
+                            ? string.Format(s.MappedTrack, m.SourceJp, m.FfName, m.Track.Keys.Count)
+                            : string.Format(s.MappedInherit, m.SourceJp, m.FfName));
                 ImGui.TreePop();
             }
         }
 
-        if (ImGui.TreeNode($"骨骼列表（{tree.BoneCount}）"))
+        if (ImGui.TreeNode(string.Format(s.BoneList, tree.BoneCount)))
         {
             ImGui.BeginChild("##bonelist", new Vector2(0, 320));
             for (var i = 0; i < tree.BoneCount; i++)
             {
-                var parentName = tree.Parent[i] >= 0 ? tree.Names[tree.Parent[i]] : "(根)";
+                var parentName = tree.Parent[i] >= 0 ? tree.Names[tree.Parent[i]] : s.RootLabel;
                 ImGui.TextUnformatted($"{i,3}  {tree.Names[i]}   ←  {parentName}");
             }
             ImGui.EndChild();

@@ -271,20 +271,20 @@ public sealed unsafe class MusicService : IDisposable, AudioTransportLogic.ISink
 
     private static WaveStream CreateReader(string path)
     {
-        if (!File.Exists(path)) throw new FileNotFoundException("音乐文件不存在。", path);
+        if (!File.Exists(path)) throw new FileNotFoundException(Loc.S.MusicFileMissing, path);
         var ext = Path.GetExtension(path).ToLowerInvariant();
         return ext switch
         {
             ".wav" => new WaveFileReader(path),
             ".ogg" => new NAudio.Vorbis.VorbisWaveReader(path),
             ".mp3" => new MediaFoundationReader(path),
-            _ => throw new NotSupportedException($"不支持的音频格式 {ext};支持 wav / ogg / mp3。"),
+            _ => throw new NotSupportedException(string.Format(Loc.S.MusicFormatUnsupported, ext)),
         };
     }
 
     private static string DescribeError(Exception e) => e switch
     {
-        FileNotFoundException => "文件不存在。",
+        FileNotFoundException => Loc.S.MusicFileMissing,
         NotSupportedException => e.Message,
         _ => e.Message,
     };

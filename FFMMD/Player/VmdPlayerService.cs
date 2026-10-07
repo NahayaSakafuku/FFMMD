@@ -86,7 +86,7 @@ public sealed unsafe class VmdPlayerService : IDisposable
         {
             var file = Vmd.VmdFile.Parse(path);
             var anim = Vmd.VmdAnimation.Build(file);
-            if (anim.Tracks.Count == 0) throw new InvalidDataException("此 VMD 没有骨骼动作关键帧；当前版本不播放纯表情或纯镜头文件。");
+            if (anim.Tracks.Count == 0) throw new InvalidDataException(Loc.S.LoadNoBoneTracks);
             Anim = anim;
             LoadedPath = path;
             LoadError = null;
@@ -115,7 +115,7 @@ public sealed unsafe class VmdPlayerService : IDisposable
     public void Play()
     {
         if (Anim == null) return;
-        if (!Svc.ClientState.IsGPosing) { LoadError = "请先进入集体动作（GPose）再播放。"; return; }
+        if (!Svc.ClientState.IsGPosing) { LoadError = Loc.S.LoadEnterGpose; return; }
         LoadError = null;
         Playing = true;
         Paused = false;
@@ -211,7 +211,7 @@ public sealed unsafe class VmdPlayerService : IDisposable
         {
             var rig=Retarget.PmxRigReader.Parse(path);
             foreach(var name in new[]{"下半身","左足","左ひざ","左足首","右足","右ひざ","右足首"})
-                if(rig.Find(name)<0)throw new InvalidDataException($"源 PMX 缺少人体关节：{name}");
+                if(rig.Find(name)<0)throw new InvalidDataException(string.Format(Loc.S.SourcePmxMissing, name));
             Retargeter.SetSourceRig(rig);SourcePmxPath=path;SourceError=null;
             P.Config.SourcePmxPath=path;P.Config.SourcePmxMotionPath=LoadedPath;P.ConfigDirty=true;
         }
@@ -233,11 +233,11 @@ public sealed unsafe class VmdPlayerService : IDisposable
     private void RequestDiagnosticsLocked()
     {
         if(Anim==null||!Svc.ClientState.IsGPosing||!TargetValid||_applier?.Available!=true)
-        {DiagnosticStatus="请在 GPose 中选择角色并加载动作，骨架 Hook 需可用。";return;}
+        {DiagnosticStatus=Loc.S.DiagNeedGpose;return;}
         SetPaused(true);Seek(TimeSec);_diagnosticRequested=true;_diagnostic=null;
         ScaleAuditStatus=null;
         Volatile.Write(ref _diagnosticReady,0);_diagnosticDeadline=Environment.TickCount64+3000;
-        DiagnosticStatus="已暂停：等待当前帧写入和最终姿态…";
+        DiagnosticStatus=Loc.S.DiagWaiting;
     }
 
     private void Tick(IFramework framework)
@@ -491,8 +491,8 @@ public sealed unsafe class VmdPlayerService : IDisposable
         if((_diagnosticRequested||_diagnostic!=null)&&Environment.TickCount64>_diagnosticDeadline&&Volatile.Read(ref _diagnosticReady)==0)
         {
             _diagnosticRequested=false;
-            if(_diagnostic==null){DiagnosticStatus="未捕获到骨架写入，请检查播放目标和 Hook。";return;}
-            _diagnostic.FinalStageNote="最终观察超时或目标已变化；FinalRender 未捕获。";Volatile.Write(ref _diagnosticReady,1);
+            if(_diagnostic==null){DiagnosticStatus=Loc.S.DiagNoWrite;return;}
+            _diagnostic.FinalStageNote=Loc.S.DiagTimeout;Volatile.Write(ref _diagnosticReady,1);
         }
         if(_diagnostic==null||Volatile.Read(ref _diagnosticReady)==0)return;
         try
@@ -500,10 +500,10 @@ public sealed unsafe class VmdPlayerService : IDisposable
             var directory=Path.Combine(Svc.PluginInterface.GetPluginConfigDirectory(),"diagnostics");Directory.CreateDirectory(directory);
             var path=Path.Combine(directory,$"FFMMD-{DateTime.Now:yyyyMMdd-HHmmss-fff}-frame{_diagnostic.Frame:0.00}.json");
             File.WriteAllText(path,JsonSerializer.Serialize(_diagnostic,new JsonSerializerOptions{IncludeFields=true,WriteIndented=true}));
-            ScaleAuditStatus=$"{_diagnostic.Frame/30:0.00}s 缩放变化：写入前后 {_diagnostic.DuringWriteScaleAudit?.ChangedBones.Length.ToString()??"未捕获"}；后续阶段 {_diagnostic.FinalStageScaleAudit?.ChangedBones.Length.ToString()??"未捕获"}（分别记录）。";
-            DiagnosticStatus=$"已导出：{path}";PluginLog.Information($"[FFMMD] {DiagnosticStatus}");
+            ScaleAuditStatus=string.Format(Loc.S.ScaleAudit, _diagnostic.Frame/30, _diagnostic.DuringWriteScaleAudit?.ChangedBones.Length.ToString()??Loc.S.ScaleNotCaptured, _diagnostic.FinalStageScaleAudit?.ChangedBones.Length.ToString()??Loc.S.ScaleNotCaptured);
+            DiagnosticStatus=string.Format(Loc.S.DiagExported, path);PluginLog.Information($"[FFMMD] {DiagnosticStatus}");
         }
-        catch(Exception e){DiagnosticStatus=$"诊断保存失败：{e.Message}";}
+        catch(Exception e){DiagnosticStatus=string.Format(Loc.S.DiagSaveFailed, e.Message);}
         _diagnostic=null;Volatile.Write(ref _diagnosticReady,0);
     }
     private Retarget.PlacementSnapshot CapturePlacement(Retarget.PoseSnapshot body)

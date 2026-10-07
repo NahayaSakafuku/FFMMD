@@ -73,6 +73,9 @@ public class Config
     /// </summary>
     public bool MuteGameAudioWhilePlaying = true;
 
+    /// <summary> UI 语言:0=自动(国服客户端为中文,其余 English),1=中文,2=English。 </summary>
+    public int Language;
+
     /// <summary> GPose 会隐藏聊天框导致 /ffmmd 无法输入，进入时自动弹出插件窗口。 </summary>
     public bool AutoOpenInGPose = true;
 
@@ -108,5 +111,6 @@ public class Config
         if (PlayHotkey < 0) PlayHotkey = 0;
         if (PauseHotkey < 0) PauseHotkey = 0;
         if (StopHotkey < 0) StopHotkey = 0;
+        Language = Math.Clamp(Language, 0, 2);
     }
 }
