@@ -62,4 +62,3 @@ dotnet run --project FFMMD.Test -- --verify '<VMD 路径>'
 
 灵感来自 [Endfield-Poser](https://github.com/OedoSoldier/Endfield-Poser);游戏访问/同步规则核查参考 [Brio](https://github.com/Etheirys/Brio)、[Dalamud](https://github.com/goatcorp/Dalamud)、[FFXIVClientStructs](https://github.com/aers/FFXIVClientStructs)。新重定向核心与音乐播放独立实现,保留项目 GPL-3.0 许可证。
 
-详细动画原理与音乐架构见随源码包提供的开发交接文档(DEVELOPER_HANDOFF / RELEASE 系列,不入仓库)。
