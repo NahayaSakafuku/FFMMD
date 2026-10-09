@@ -35,8 +35,8 @@ public sealed class PartialPoseSnapshot
 }
 public sealed class RigDiagnosticReport
 {
-    public int SchemaVersion=5;
-    public string PluginVersion="1.1.6",CapturedUtc=DateTime.UtcNow.ToString("O"),TargetName="",MotionPath="";
+    public int SchemaVersion=9;
+    public string PluginVersion=typeof(RigDiagnosticReport).Assembly.GetName().Version?.ToString()??"unknown",CapturedUtc=DateTime.UtcNow.ToString("O"),TargetName="",MotionPath="";
     public float Frame;
     public bool ApproximateSource,FinalStageAvailable;
     public string SourceName="",SourceFingerprint="",FinalStageNote="";
@@ -58,6 +58,20 @@ public sealed class RigDiagnosticReport
     public PlacementSnapshot? BeforePlacement,AfterPlacement,FinalPlacement;
     public FingerJointDiagnostic[] FourFingerJoints=[];
     public string FourFingerAdaptation="bounded flexion/spread; length-weighted middle/tip chord";
+    public Skirt.SkirtPhysicsSnapshot? SkirtPhysics;
+    public string NativeClothingObserverStatus = "NotConfigured";
+    public string? NativeClothingObserverError;
+    public Skirt.PhybProfileObservation[] PhybProfiles = [];
+    public string? OfflineSkirtCachePath, OfflineSkirtCacheStatus, OfflineSkirtReferenceSha256;
+    public bool OfflineSkirtCacheApplied;
+    public Skirt.SkirtBakeCache.SolverDocument? OfflineSkirtSolver;
+    public string[] OfflineSkirtTargetBones = [];
+    public Quaternion[] OfflineSkirtPreparedLocalRotations = [];
+    public long PhysicsHookInvocation;
+    public long PhysicsPreparedGeneration;
+    public string PhysicsHookArgument="";
+    public string PhysicsHookScope="Global UpdateBonePhysics boundary; argument is not verified as this character. Paired observations do not alone prove skirt ownership or simulator execution.";
+    public string PhysicsObservationNote="";
 }
 public sealed class TargetSkeletonSnapshot
 {

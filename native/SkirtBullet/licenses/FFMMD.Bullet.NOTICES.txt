@@ -1,0 +1,24 @@
+FFMMD.Bullet.dll third-party notices
+
+Native solver: Bullet 3.25, commit 2c204c49e56ed15ec5fcfa71d199ab6d6570b3f5.
+Upstream: https://github.com/bulletphysics/bullet3
+License: Bullet-LICENSE.txt (zlib).
+Only BulletCollision, BulletDynamics and LinearMath core source is compiled.
+No Blender or mmdtools implementation is included in this library.
+
+Build runtime: LLVM-MinGW 20261006 UCRT x86_64.
+Upstream: https://github.com/mstorsjo/llvm-mingw
+LLVM libc++, libc++abi, libunwind and compiler-rt portions use the Apache
+License 2.0 with LLVM exceptions; see LLVM-MinGW-LICENSE.txt.
+
+The library statically links MinGW-w64 runtime and winpthreads portions.
+Their complete bundled runtime notices are retained in:
+COPYING.MinGW-w64-runtime.txt
+COPYING.winpthreads.txt
+COPYING.winstorecompat.txt
+COPYING.MinGW-w64.txt additionally documents tool-only notices and which
+notices apply to binaries built with MinGW-w64.
+
+The DLL imports Windows system UCRT API-set libraries and KERNEL32.dll.
+The compiler, Python, BusyBox, linker and development toolchain are not
+part of the player distribution.

@@ -1,5 +1,6 @@
 using Dalamud.Hooking;
 using FFXIVClientStructs.FFXIV.Client.Graphics.Scene;
+using System.Threading;
 
 namespace FFMMD.Posing;
 
@@ -20,12 +21,16 @@ public sealed unsafe class BoneApplier : IDisposable
     private delegate void FinalizeSkeletonsDelegate(nint a1);
     private Hook<FinalizeSkeletonsDelegate>? _finalHook;
     private bool _errorLogged;
+    private bool _observationErrorLogged;
+    private long _invocationSequence;
 
     public bool Available;
     public string? Error;
 
     /// <summary> 由播放器注册：每次 hook 触发后复制准备好的姿态。 </summary>
-    public Action? OnUpdateBonePhysics;
+    public Action<long, nint>? OnUpdateBonePhysics;
+    /// <summary>只读观察原函数入口；invocation 用于配对全局入口的前后快照。</summary>
+    public Action<long, nint>? OnBeforeUpdateBonePhysics;
     public Action? OnFinalized;
     public bool FinalStageAvailable=>_finalHook!=null;
     public string? FinalStageError;
@@ -63,10 +68,20 @@ public sealed unsafe class BoneApplier : IDisposable
 
     private nint Detour(nint a1)
     {
+        var invocation = Interlocked.Increment(ref _invocationSequence);
+        try { OnBeforeUpdateBonePhysics?.Invoke(invocation, a1); }
+        catch (Exception e)
+        {
+            if (!_observationErrorLogged)
+            {
+                _observationErrorLogged = true;
+                PluginLog.Error($"[FFMMD] 原生物理只读观察失败（仅报告一次）: {e}");
+            }
+        }
         var ret = _hook!.Original(a1);
         try
         {
-            OnUpdateBonePhysics?.Invoke();
+            OnUpdateBonePhysics?.Invoke(invocation, a1);
         }
         catch (Exception e)
         {

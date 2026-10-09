@@ -7,3 +7,5 @@ obj/
 HANDOFF*
 RELEASE-*
 DEVELOPER_HANDOFF*
+__pycache__/
+*.py[cod]

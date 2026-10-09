@@ -83,7 +83,7 @@ public sealed unsafe class MusicService : IDisposable, AudioTransportLogic.ISink
         if (path != null)
         {
             P.Config.MusicPath = path;
-            if (P.Player.LoadedPath is { } motion)
+            if (P.Player.Primary.LoadedPath is { } motion)
                 P.Config.MusicByMotion[motion] = path;
             P.ConfigDirty = true;
             LoadFile(path);
@@ -93,7 +93,7 @@ public sealed unsafe class MusicService : IDisposable, AudioTransportLogic.ISink
             var current = _currentPath;
             if (current != null)
             {
-                if (P.Player.LoadedPath is { } motion &&
+                if (P.Player.Primary.LoadedPath is { } motion &&
                     P.Config.MusicByMotion.TryGetValue(motion, out var tied) &&
                     string.Equals(tied, current, StringComparison.OrdinalIgnoreCase))
                 {
@@ -109,7 +109,7 @@ public sealed unsafe class MusicService : IDisposable, AudioTransportLogic.ISink
             LoadFile(null);
         }
         // 播放/暂停中导入时,Logic 内部的动画时间已过期;用实时时间定位到"当前画面 + 偏移"。
-        _logic.OnFileReplaced(P.Player.TimeSec, this);
+        _logic.OnFileReplaced(P.Player.Primary.TimeSec, this);
     }
 
     public void SetVolume(float volume)
@@ -126,7 +126,7 @@ public sealed unsafe class MusicService : IDisposable, AudioTransportLogic.ISink
         P.Config.MusicOffsetSec = (float)offsetSec;
         P.ConfigDirty = true;
         // 偏移变化是显式重定位:必须用实时动画时间,Logic 缓存的时间在播放中已过期。
-        _logic.SetOffset(offsetSec, P.Player.TimeSec, this);
+        _logic.SetOffset(offsetSec, P.Player.Primary.TimeSec, this);
     }
 
     public void SetEnabled(bool enabled)

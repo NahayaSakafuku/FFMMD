@@ -39,8 +39,17 @@ public class Calibration
 public class Config
 {
     public int RigPipelineVersion;
+    /// <summary> 旧版单条关联,仅为配置兼容保留;新逻辑使用 SourcePmxByMotion。 </summary>
     public string? SourcePmxPath;
     public string? SourcePmxMotionPath;
+    /// <summary> 动作路径 → 源 PMX 路径;多角色槽下每个动作各自记忆源骨架。 </summary>
+    public Dictionary<string, string> SourcePmxByMotion = new(StringComparer.OrdinalIgnoreCase);
+    /// <summary> 自动为新动作准备裙骨物理;已有缓存直接复用。 </summary>
+    public bool AutoSkirtPhysics = true;
+    /// <summary> 可选的高级裙骨物理参考 PMX;为空时使用内置参考。 </summary>
+    public string? SkirtPhysicsPmxPath;
+    /// <summary> 动作路径 → 已准备的裙骨缓存路径。 </summary>
+    public Dictionary<string, string> SkirtBakeByMotion = new(StringComparer.OrdinalIgnoreCase);
     /// <summary> 旧版配置兼容字段；缺少源参考变换的实验 rest 模式已停用。 </summary>
     public int RetargetMode;
 
@@ -108,9 +117,19 @@ public class Config
         MusicVolume = float.IsFinite(MusicVolume) ? Math.Clamp(MusicVolume, 0f, 1f) : 0.8f;
         MusicOffsetSec = float.IsFinite(MusicOffsetSec) ? Math.Clamp(MusicOffsetSec, -10f, 10f) : 0;
         MusicByMotion ??= new(StringComparer.OrdinalIgnoreCase);
+        SkirtPhysicsPmxPath = string.IsNullOrWhiteSpace(SkirtPhysicsPmxPath) ? null : SkirtPhysicsPmxPath.Trim();
+        var skirtAssociations = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        if (SkirtBakeByMotion != null)
+            foreach (var association in SkirtBakeByMotion) skirtAssociations[association.Key] = association.Value;
+        SkirtBakeByMotion = skirtAssociations;
         if (PlayHotkey < 0) PlayHotkey = 0;
         if (PauseHotkey < 0) PauseHotkey = 0;
         if (StopHotkey < 0) StopHotkey = 0;
         Language = Math.Clamp(Language, 0, 2);
+        // 旧版单条源 PMX 关联迁移到按动作字典(TryAdd 幂等);旧字段保留原值不置空,
+        // 与 RotateX180 等兼容字段同策略——运行时新逻辑只读字典。
+        SourcePmxByMotion ??= new(StringComparer.OrdinalIgnoreCase);
+        if (SourcePmxPath is { } legacyPmx && SourcePmxMotionPath is { } legacyMotion && File.Exists(legacyPmx))
+            SourcePmxByMotion.TryAdd(legacyMotion, legacyPmx);
     }
 }

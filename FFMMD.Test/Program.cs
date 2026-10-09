@@ -4,8 +4,14 @@
 using System.Numerics;
 using System.Text;
 using FFMMD.Vmd;
+using FFMMD.Test;
 
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+if (args.Length >= 3 && args[0] == "--bake-skirt")
+    return BuiltinSkirtBakeHarness.Run(args[1], args[2], args.Length > 3 ? args[3] : null,
+        args.Length > 4 ? int.Parse(args[4]) : null, args.Length > 5 ? int.Parse(args[5]) : null,
+        args.Length > 6 ? int.Parse(args[6]) : null, args.Length > 7 ? int.Parse(args[7]) : null);
 
 if (args.Length > 0 && args[0] != "--verify")
 {
@@ -68,6 +74,17 @@ Check(MathF.Abs(lin.Evaluate(0.3f) - 0.3f) < 1e-3f, "默认 20/107 曲线 ≈ �
 
 failures += RegressionSuite.Run(args.Length > 1 && args[0] == "--verify" ? args[1] : null);
 failures += MusicRegression.Run();
+failures += SkirtConfigurationRegression.Run();
+failures += NativePhysicsRegression.Run();
+failures += PhybProfileRegression.Run();
+failures += SkirtBakeCacheRegression.Run();
+failures += SkirtLibraryLocatorRegression.Run();
+failures += SkirtPreprocessorRegression.Run();
+failures += PmxPhysicsProfileRegression.Run();
+failures += SkirtTrackSmoothingRegression.Run();
+failures += SkirtProxyCollisionGuardRegression.Run();
+failures += KinematicColliderDriverRegression.Run();
+failures += SkirtBulletRegression.Run(referencePmxPath: Environment.GetEnvironmentVariable("FFMMD_TEST_PMX"));
 Console.WriteLine(failures == 0 ? "\n全部通过 ✔" : $"\n{failures} 项失败 ✘");
 return failures == 0 ? 0 : 1;
 

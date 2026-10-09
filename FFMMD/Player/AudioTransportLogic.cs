@@ -5,7 +5,7 @@ public enum TransportAction
 {
     /// <summary> 新动画载入成功(Path = VMD 路径),时间 0、未播放。 </summary>
     Loaded,
-    /// <summary> 用户开始播放(TimeSec 已定位;若已到末尾则归 0)。 </summary>
+    /// <summary> 用户开始播放(TimeSec 已定位;若已到末尾则归 0)。Flag = 当前播放环境无效。 </summary>
     Play,
     /// <summary> 暂停切换(Flag = 暂停后状态)。 </summary>
     PauseChanged,
@@ -92,7 +92,7 @@ public sealed class AudioTransportLogic
             case TransportAction.Play:
                 _animTime = e.TimeSec;
                 _playing = true;
-                _suspended = false;
+                _suspended = e.Flag;
                 SeekSink(sink, _animTime + _offsetSec);
                 Apply(sink);
                 break;

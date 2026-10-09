@@ -2,11 +2,11 @@
     "Author": "NahayaSakafuku",
     "Name": "FFMMD",
     "InternalName": "FFMMD",
-    "Description": "在游戏内直接导入 VMD（MMD 动作）并驱动角色骨骼播放，无需 Blender。仅限摄影（GPose）用途。/ Import VMD (MMD motion) files and play them on characters in-game, no Blender needed.",
+    "Description": "在游戏内直接导入 VMD 并播放 GPose 角色动作，无需 Blender。支持内置裙骨物理：导入后后台解算并复用缓存；本地音乐同步播放、中英文 UI 与快捷键。支持多人舞蹈（实验性，尚未完全验证）。/ Import VMD motions in GPose without Blender, with built-in skirt physics preprocessing and reusable caches, music, bilingual UI and hotkeys. Multi-character dancing is experimental and not fully validated.",
     "ApplicableVersion": "any",
-    "Punchline": "游戏内 VMD/MMD 动作播放",
+    "Punchline": "游戏内 VMD 动作、裙骨物理与音乐；实验性多人舞蹈",
     "RepoUrl": "https://github.com/NahayaSakafuku/FFMMD",
     "AcceptsFeedback": false,
     "DalamudApiLevel": 15,
-    "Version": "1.0.1.0"
+    "Version": "1.1.0.0"
 }

@@ -1,0 +1,7936 @@
+{
+  "Rig": {
+    "Name": "body",
+    "Fingerprint": "5B967C5DBDB18101D1D81569DBBE63DA508E5DE39D4898ADF7953FD12E5160AC",
+    "Approximate": false,
+    "Bones": [
+      {
+        "AppendLocal": false,
+        "Name": "\u64CD\u4F5C\u4E2D\u5FC3",
+        "Parent": -1,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 30,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5168\u3066\u306E\u89AA",
+        "Parent": -1,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 2,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 0.22725141,
+          "Z": 0.861668
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 1
+        },
+        "Flags": 2079,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u30BB\u30F3\u30BF\u30FC2",
+        "Parent": 1,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 3,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 13.75673,
+          "Z": 0.4233357
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 31,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u30BB\u30F3\u30BF\u30FC",
+        "Parent": 2,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 13.756729,
+          "Z": 0.4233357
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 1
+        },
+        "Flags": 2078,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u30B0\u30EB\u30FC\u30D62",
+        "Parent": 3,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 5,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 13.95673,
+          "Z": 0.4233357
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 31,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u30B0\u30EB\u30FC\u30D6",
+        "Parent": 4,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 1.4,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 13.956729,
+          "Z": 0.4233357
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 30,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u8170",
+        "Parent": 5,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0.4730568,
+          "Z": 0.14064243
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 12.782326,
+          "Z": 0.26747292
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 26,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u4E0B\u534A\u8EAB",
+        "Parent": 6,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0,
+          "Y": 13.373647,
+          "Z": 0.44327596
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.9604645E-08,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 1
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8DB3",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 9,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 12.388122,
+          "Z": 0.44327596
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.9604645E-08,
+          "Y": 1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": -0,
+          "Z": 1
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u3072\u3056",
+        "Parent": 8,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 10,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 6.85134,
+          "Z": 0.44327596
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1.1920932E-07,
+          "Y": 1,
+          "Z": -3.7252903E-09
+        },
+        "LocalAxisZ": {
+          "X": 0.06348609,
+          "Y": -3.8503587E-09,
+          "Z": 0.9979827
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8DB3\u9996",
+        "Parent": 9,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 11,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 1.1556311,
+          "Z": 0.80560535
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": -2.384186E-07,
+          "Y": 1,
+          "Z": -2.980232E-08
+        },
+        "LocalAxisZ": {
+          "X": -0.8293178,
+          "Y": -1.8107194E-07,
+          "Z": 0.5587772
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8DB3\u5148EX",
+        "Parent": 10,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 0.48081774,
+          "Z": -0.19592863
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 3.218651E-06,
+          "Y": 1,
+          "Z": 2.205372E-06
+        },
+        "LocalAxisZ": {
+          "X": -0.9999997,
+          "Y": 3.2170037E-06,
+          "Z": 0.00074648845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8DB3",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 13,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.8144239,
+          "Y": 12.38811,
+          "Z": 0.4432755
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.960464E-08,
+          "Y": 1,
+          "Z": 1.224647E-16
+        },
+        "LocalAxisZ": {
+          "X": 3.537789E-31,
+          "Y": 1.224647E-16,
+          "Z": -1
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u3072\u3056",
+        "Parent": 12,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 14,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.81442386,
+          "Y": 6.851335,
+          "Z": 0.4432755
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -0.06348614,
+          "Y": 0,
+          "Z": -0.9979827
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8DB3\u9996",
+        "Parent": 13,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 15,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.81442386,
+          "Y": 1.1556311,
+          "Z": 0.80560493
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": -1.192093E-07,
+          "Y": 1,
+          "Z": -2.980232E-08
+        },
+        "LocalAxisZ": {
+          "X": 0.8293178,
+          "Y": 8.220954E-08,
+          "Z": -0.5587773
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8DB3\u5148EX",
+        "Parent": 14,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.81442386,
+          "Y": 0.4808179,
+          "Z": -0.19592822
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 2.980232E-06,
+          "Y": 1,
+          "Z": 2.086163E-06
+        },
+        "LocalAxisZ": {
+          "X": 0.99999976,
+          "Y": -2.9786738E-06,
+          "Z": -0.0007466072
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8DB3IK\u89AA",
+        "Parent": 1,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 17,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 0,
+          "Z": 0.8056054
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 31,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8DB3IK",
+        "Parent": 16,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 1.155631,
+          "Z": 0.8056054
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 62,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8DB3IK\u89AA",
+        "Parent": 1,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 19,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.8144239,
+          "Y": 0,
+          "Z": 0.8056049
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 31,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8DB3IK",
+        "Parent": 18,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.8144239,
+          "Y": 1.155631,
+          "Z": 0.8056049
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 62,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u3064\u307E\u5148IK",
+        "Parent": 17,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8144238,
+          "Y": 0.48081768,
+          "Z": -0.1959287
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 62,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u3064\u307E\u5148IK",
+        "Parent": 19,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.8144239,
+          "Y": 0.4808179,
+          "Z": -0.19592816
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 62,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u4E0A\u534A\u8EAB",
+        "Parent": 6,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 23,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -8.654283E-17,
+          "Y": 13.9316,
+          "Z": 0.443276
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -0.004138739,
+          "Y": 0,
+          "Z": 0.9999914
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u4E0A\u534A\u8EAB2",
+        "Parent": 22,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 24,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.9967925E-17,
+          "Y": 15.516003,
+          "Z": 0.4367184
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": -1.192093E-07,
+          "Y": -1,
+          "Z": 7.450581E-09
+        },
+        "LocalAxisZ": {
+          "X": 0.1959364,
+          "Y": -1.6051278E-08,
+          "Z": 0.9806166
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u4E0A\u534A\u8EAB3",
+        "Parent": 23,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.1722654E-17,
+          "Y": 16.558249,
+          "Z": 0.64496994
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0.05856351,
+          "Y": 0,
+          "Z": 0.9982837
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Left_Pectoralis_01",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.4718951,
+          "Y": 16.967812,
+          "Z": 0.28917605
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1.192093E-07,
+          "Y": -1,
+          "Z": 1.1641534E-10
+        },
+        "LocalAxisZ": {
+          "X": -0.0034143864,
+          "Y": -2.9061198E-10,
+          "Z": 0.99999416
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Left_Bust_01_offset",
+        "Parent": 25,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.5797893,
+          "Y": 16.496862,
+          "Z": -0.05494353
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -0.99999416,
+          "Y": -0,
+          "Z": -0.0034143925
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "EX_Left_Bust_01",
+        "Parent": 26,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.5797893,
+          "Y": 16.496103,
+          "Z": -0.27694225
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -0.99999416,
+          "Y": -0,
+          "Z": -0.0034143925
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u80A9P",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.4545621,
+          "Y": 17.625412,
+          "Z": 0.72536236
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 26,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u80A9\u002B",
+        "Parent": 28,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 30,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.4545621,
+          "Y": 17.62541,
+          "Z": 0.7253624
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u80A9",
+        "Parent": 29,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 32,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.4545621,
+          "Y": 17.625412,
+          "Z": 0.72536236
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.96812654,
+          "Y": 0.25046185,
+          "Z": 9.455109E-10
+        },
+        "LocalAxisZ": {
+          "X": 2.810929E-09,
+          "Y": -1.4640338E-08,
+          "Z": 1
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u80A9C",
+        "Parent": 30,
+        "Layer": 0,
+        "AppendParent": 28,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.2467431,
+          "Y": 17.535088,
+          "Z": 0.72536236
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": -1
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155\u002B",
+        "Parent": 31,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 33,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.2467434,
+          "Y": 17.53509,
+          "Z": 0.7253624
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155",
+        "Parent": 32,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 39,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.2467431,
+          "Y": 17.535088,
+          "Z": 0.72536236
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.66910404,
+          "Y": -0.7431174,
+          "Z": -0.008742647
+        },
+        "LocalAxisZ": {
+          "X": 0.0058499514,
+          "Y": -0.0064970716,
+          "Z": 0.9999618
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155\u6369",
+        "Parent": 33,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 2.4548254,
+          "Y": 16.193369,
+          "Z": 0.7983345
+        },
+        "FixedAxis": {
+          "X": 0.6685836,
+          "Y": -0.7425396,
+          "Z": 0.040384583
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 1050,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155\u63691",
+        "Parent": 33,
+        "Layer": 0,
+        "AppendParent": 34,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.8910553,
+          "Y": 16.819506,
+          "Z": 0.7642808
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.25
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155\u63692",
+        "Parent": 33,
+        "Layer": 0,
+        "AppendParent": 34,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 2.293749,
+          "Y": 16.372267,
+          "Z": 0.78860486
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.5
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u8155\u63693",
+        "Parent": 33,
+        "Layer": 0,
+        "AppendParent": 34,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 2.6964438,
+          "Y": 15.925028,
+          "Z": 0.8129289
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.75
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Left_ArmRoll",
+        "Parent": 33,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.4009154,
+          "Y": 17.363863,
+          "Z": 0.72737676
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": -0.7431216,
+          "Z": -0.008064246
+        },
+        "LocalAxisZ": {
+          "X": 0.005396014,
+          "Y": -0.0059929206,
+          "Z": 0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u3072\u3058\u002B",
+        "Parent": 34,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 40,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.2602153,
+          "Y": 15.298895,
+          "Z": 0.7516707
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u3072\u3058",
+        "Parent": 39,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 46,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.2602148,
+          "Y": 15.29889,
+          "Z": 0.7516707
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": -0.7431216,
+          "Z": 0.008064247
+        },
+        "LocalAxisZ": {
+          "X": -0.005396038,
+          "Y": 0.0059929006,
+          "Z": 0.9999675
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u6369",
+        "Parent": 40,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.4683056,
+          "Y": 13.957167,
+          "Z": 0.7371105
+        },
+        "FixedAxis": {
+          "X": 0.66910803,
+          "Y": -0.74312145,
+          "Z": -0.008064257
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 1050,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u63691",
+        "Parent": 40,
+        "Layer": 0,
+        "AppendParent": 41,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.9037423,
+          "Y": 14.58418,
+          "Z": 0.7439148
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.25
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u63692",
+        "Parent": 40,
+        "Layer": 0,
+        "AppendParent": 41,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.3067007,
+          "Y": 14.136645,
+          "Z": 0.7390582
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.5
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u63693",
+        "Parent": 40,
+        "Layer": 0,
+        "AppendParent": 41,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.7096605,
+          "Y": 13.689114,
+          "Z": 0.7342016
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.75
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Left_ForeArmRoll",
+        "Parent": 40,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.559651,
+          "Y": 13.855719,
+          "Z": 0.73600966
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": -0.7431216,
+          "Z": 0.008064247
+        },
+        "LocalAxisZ": {
+          "X": -0.005396036,
+          "Y": 0.005992902,
+          "Z": 0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u9996\u002B",
+        "Parent": 41,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 47,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.2736998,
+          "Y": 13.062686,
+          "Z": 0.7274037
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u624B\u9996",
+        "Parent": 46,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.2736993,
+          "Y": 13.062684,
+          "Z": 0.7274037
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6689056,
+          "Y": -0.7433036,
+          "Z": 0.008064246
+        },
+        "LocalAxisZ": {
+          "X": -0.005394406,
+          "Y": 0.0059943674,
+          "Z": 0.99996746
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u30C0\u30DF\u30FC",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.6569424,
+          "Y": 12.318961,
+          "Z": 0.71897984
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6689056,
+          "Y": -0.7433036,
+          "Z": 0.008064246
+        },
+        "LocalAxisZ": {
+          "X": -0.005394406,
+          "Y": 0.0059943674,
+          "Z": 0.99996746
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4EBA\u5DEE\u63071",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.9028206,
+          "Y": 12.439798,
+          "Z": 0.37730968
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.70675683,
+          "Y": -0.70012677,
+          "Z": 0.101574495
+        },
+        "LocalAxisZ": {
+          "X": -0.07216172,
+          "Y": 0.07148471,
+          "Z": 0.9948279
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4EBA\u5DEE\u63072",
+        "Parent": 49,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.121172,
+          "Y": 12.167386,
+          "Z": 0.34172204
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.70624727,
+          "Y": -0.7006407,
+          "Z": 0.10157448
+        },
+        "LocalAxisZ": {
+          "X": -0.07210969,
+          "Y": 0.071537174,
+          "Z": 0.9948279
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4EBA\u5DEE\u63073",
+        "Parent": 50,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.2646832,
+          "Y": 11.988591,
+          "Z": 0.318351
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.70624727,
+          "Y": -0.7006407,
+          "Z": 0.10157448
+        },
+        "LocalAxisZ": {
+          "X": -0.07210969,
+          "Y": 0.071537174,
+          "Z": 0.9948279
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4E2D\u63071",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.9392633,
+          "Y": 12.436268,
+          "Z": 0.63548625
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.7525776,
+          "Y": -0.6566417,
+          "Z": -0.049482163
+        },
+        "LocalAxisZ": {
+          "X": 0.03728483,
+          "Y": -0.032531932,
+          "Z": 0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4E2D\u63072",
+        "Parent": 52,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.1649656,
+          "Y": 12.11508,
+          "Z": 0.6547938
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.75166684,
+          "Y": -0.65768415,
+          "Z": -0.049482152
+        },
+        "LocalAxisZ": {
+          "X": 0.037239704,
+          "Y": -0.032583553,
+          "Z": 0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u4E2D\u63073",
+        "Parent": 53,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.3016367,
+          "Y": 11.921171,
+          "Z": 0.6664636
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.75166684,
+          "Y": -0.65768415,
+          "Z": -0.049482152
+        },
+        "LocalAxisZ": {
+          "X": 0.037239704,
+          "Y": -0.032583553,
+          "Z": 0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u5C0F\u63071",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.771623,
+          "Y": 12.455801,
+          "Z": 1.0937309
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.715711,
+          "Y": -0.57670766,
+          "Z": -0.39391112
+        },
+        "LocalAxisZ": {
+          "X": 0.3067258,
+          "Y": -0.24715434,
+          "Z": 0.9191485
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u5C0F\u63072",
+        "Parent": 55,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.904315,
+          "Y": 12.244051,
+          "Z": 1.1992197
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.71905184,
+          "Y": -0.5725368,
+          "Z": -0.39391118
+        },
+        "LocalAxisZ": {
+          "X": 0.30815756,
+          "Y": -0.24536692,
+          "Z": 0.91914845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u5C0F\u63073",
+        "Parent": 56,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.988292,
+          "Y": 12.108135,
+          "Z": 1.2665888
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.71905184,
+          "Y": -0.5725368,
+          "Z": -0.39391118
+        },
+        "LocalAxisZ": {
+          "X": 0.30815756,
+          "Y": -0.24536692,
+          "Z": 0.91914845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u85AC\u63071",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.8784094,
+          "Y": 12.438262,
+          "Z": 0.8854834
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.7490397,
+          "Y": -0.6219868,
+          "Z": -0.22819275
+        },
+        "LocalAxisZ": {
+          "X": 0.17555735,
+          "Y": -0.14577912,
+          "Z": 0.973616
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u85AC\u63072",
+        "Parent": 58,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.0729814,
+          "Y": 12.1441,
+          "Z": 0.96723354
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.746778,
+          "Y": -0.6247004,
+          "Z": -0.22819282
+        },
+        "LocalAxisZ": {
+          "X": 0.17502731,
+          "Y": -0.14641519,
+          "Z": 0.97361594
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u85AC\u63073",
+        "Parent": 59,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 6.185521,
+          "Y": 11.975336,
+          "Z": 1.0142778
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.746778,
+          "Y": -0.6247004,
+          "Z": -0.22819282
+        },
+        "LocalAxisZ": {
+          "X": 0.17502731,
+          "Y": -0.14641519,
+          "Z": 0.97361594
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u89AA\u63070",
+        "Parent": 47,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.283038,
+          "Y": 12.754626,
+          "Z": 0.47291863
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.18087932,
+          "Y": -0.8081459,
+          "Z": -0.56052023
+        },
+        "LocalAxisZ": {
+          "X": -0.96753746,
+          "Y": -0.043934423,
+          "Z": -0.24887969
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u89AA\u63071",
+        "Parent": 61,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.3569717,
+          "Y": 12.424294,
+          "Z": 0.24380507
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.17638998,
+          "Y": -0.7880849,
+          "Z": -0.5897531
+        },
+        "LocalAxisZ": {
+          "X": -0.9839096,
+          "Y": -0.123856746,
+          "Z": -0.12876941
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u5DE6\u89AA\u63072",
+        "Parent": 62,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 5.403217,
+          "Y": 12.217681,
+          "Z": 0.08918823
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_BS_acc_01_offset",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 65,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.1429137,
+          "Y": 17.052742,
+          "Z": 1.8925412
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1.192093E-07,
+          "Y": 5.960464E-08,
+          "Z": -1
+        },
+        "LocalAxisZ": {
+          "X": 0.08715573,
+          "Y": 0.9961947,
+          "Z": 6.97676E-08
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "EX_Right_BS_acc_01",
+        "Parent": 64,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 66,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.1429137,
+          "Y": 16.831585,
+          "Z": 1.9118907
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1.192093E-07,
+          "Y": 5.960464E-08,
+          "Z": -1
+        },
+        "LocalAxisZ": {
+          "X": 0.08715573,
+          "Y": 0.9961947,
+          "Z": 6.97676E-08
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_BS_acc_end",
+        "Parent": 65,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.1429142,
+          "Y": 14.177724,
+          "Z": 2.144073
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 1.1920929E-07,
+          "Y": 5.9604645E-08,
+          "Z": -1
+        },
+        "LocalAxisZ": {
+          "X": 0.08715573,
+          "Y": 0.99619466,
+          "Z": 6.97676E-08
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_Pectoralis_01",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.4718956,
+          "Y": 16.967783,
+          "Z": 0.28910875
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.9604645E-08,
+          "Y": -1,
+          "Z": -5.820766E-11
+        },
+        "LocalAxisZ": {
+          "X": -0.0007717729,
+          "Y": 1.2206399E-11,
+          "Z": -0.99999976
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_Bust_01_offset",
+        "Parent": 67,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.57978964,
+          "Y": 16.49827,
+          "Z": -0.056978583
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": -5.9604645E-08
+        },
+        "LocalAxisZ": {
+          "X": -0.99999976,
+          "Y": -4.6000537E-11,
+          "Z": 0.00077176094
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "EX_Right_Bust_01",
+        "Parent": 68,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.57978964,
+          "Y": 16.498444,
+          "Z": -0.2789785
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": -1,
+          "Z": -5.9604645E-08
+        },
+        "LocalAxisZ": {
+          "X": -0.99999976,
+          "Y": -4.6000537E-11,
+          "Z": 0.00077176094
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u80A9P",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.4545612,
+          "Y": 17.625423,
+          "Z": 0.72536194
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 26,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u80A9\u002B",
+        "Parent": 70,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 72,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.4545612,
+          "Y": 17.62542,
+          "Z": 0.7253619
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u80A9",
+        "Parent": 71,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 74,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.4545612,
+          "Y": 17.625423,
+          "Z": 0.72536194
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.9935623,
+          "Y": 0.11328675,
+          "Z": 1.941588E-08
+        },
+        "LocalAxisZ": {
+          "X": 6.966234E-09,
+          "Y": 1.1029086E-07,
+          "Z": -1
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u80A9C",
+        "Parent": 72,
+        "Layer": 0,
+        "AppendParent": 70,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.2467438,
+          "Y": 17.535088,
+          "Z": 0.72536194
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": -1
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155\u002B",
+        "Parent": 73,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 75,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.2467442,
+          "Y": 17.53509,
+          "Z": 0.7253619
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155",
+        "Parent": 74,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 81,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.2467438,
+          "Y": 17.535088,
+          "Z": 0.72536194
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.669104,
+          "Y": 0.7431174,
+          "Z": -0.008742636
+        },
+        "LocalAxisZ": {
+          "X": -0.0058500376,
+          "Y": -0.0064969794,
+          "Z": -0.99996173
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155\u6369",
+        "Parent": 75,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -2.4548233,
+          "Y": 16.193375,
+          "Z": 0.7261401
+        },
+        "FixedAxis": {
+          "X": -0.6691296,
+          "Y": -0.7431456,
+          "Z": 0.00043098777
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 1050,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155\u63691",
+        "Parent": 75,
+        "Layer": 0,
+        "AppendParent": 76,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.8910536,
+          "Y": 16.819508,
+          "Z": 0.725777
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.25
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155\u63692",
+        "Parent": 75,
+        "Layer": 0,
+        "AppendParent": 76,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -2.2937455,
+          "Y": 16.37227,
+          "Z": 0.7260363
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.5
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u8155\u63693",
+        "Parent": 75,
+        "Layer": 0,
+        "AppendParent": 76,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -2.6964393,
+          "Y": 15.925033,
+          "Z": 0.7262957
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.75
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_ArmRoll",
+        "Parent": 75,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.4009115,
+          "Y": 17.36386,
+          "Z": 0.7273758
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": 0.7431216,
+          "Z": -0.008064234
+        },
+        "LocalAxisZ": {
+          "X": -0.0053960984,
+          "Y": -0.0059928284,
+          "Z": -0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u3072\u3058\u002B",
+        "Parent": 76,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 82,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.2602084,
+          "Y": 15.298897,
+          "Z": 0.7516705
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u3072\u3058",
+        "Parent": 81,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 88,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.260209,
+          "Y": 15.298899,
+          "Z": 0.7516705
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": 0.7431216,
+          "Z": 0.008064271
+        },
+        "LocalAxisZ": {
+          "X": 0.005395964,
+          "Y": 0.0059929993,
+          "Z": -0.99996746
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u6369",
+        "Parent": 82,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -4.4683013,
+          "Y": 13.957173,
+          "Z": 0.7371102
+        },
+        "FixedAxis": {
+          "X": -0.6691079,
+          "Y": -0.74312156,
+          "Z": -0.008064287
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 1050,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u63691",
+        "Parent": 82,
+        "Layer": 0,
+        "AppendParent": 83,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.90374,
+          "Y": 14.584183,
+          "Z": 0.7439144
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.25
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u63692",
+        "Parent": 82,
+        "Layer": 0,
+        "AppendParent": 83,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -4.3066983,
+          "Y": 14.13665,
+          "Z": 0.7390579
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.5
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u63693",
+        "Parent": 82,
+        "Layer": 0,
+        "AppendParent": 83,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -4.7096586,
+          "Y": 13.689118,
+          "Z": 0.7342013
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 274,
+        "AppendRatio": 0.75
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Right_ForeArmRoll",
+        "Parent": 82,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -4.559639,
+          "Y": 13.855728,
+          "Z": 0.73600924
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.6691078,
+          "Y": 0.7431216,
+          "Z": 0.008064272
+        },
+        "LocalAxisZ": {
+          "X": 0.0053959624,
+          "Y": 0.005993002,
+          "Z": -0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u9996\u002B",
+        "Parent": 83,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 89,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.273696,
+          "Y": 13.06269,
+          "Z": 0.7274033
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u624B\u9996",
+        "Parent": 88,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.2736955,
+          "Y": 13.06269,
+          "Z": 0.72740334
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.66931,
+          "Y": 0.74293953,
+          "Z": 0.00806427
+        },
+        "LocalAxisZ": {
+          "X": 0.005397591,
+          "Y": 0.0059915334,
+          "Z": -0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u30C0\u30DF\u30FC",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.65694,
+          "Y": 12.318959,
+          "Z": 0.7189792
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.66931,
+          "Y": 0.74293953,
+          "Z": 0.00806427
+        },
+        "LocalAxisZ": {
+          "X": 0.005397591,
+          "Y": 0.0059915334,
+          "Z": -0.9999675
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4EBA\u5DEE\u63071",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.902813,
+          "Y": 12.439792,
+          "Z": 0.37731
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.62241304,
+          "Y": 0.77606994,
+          "Z": 0.10157456
+        },
+        "LocalAxisZ": {
+          "X": 0.06354993,
+          "Y": 0.07923887,
+          "Z": -0.9948279
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4EBA\u5DEE\u63072",
+        "Parent": 91,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.121172,
+          "Y": 12.167385,
+          "Z": 0.34172294
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.62297744,
+          "Y": 0.775617,
+          "Z": 0.10157457
+        },
+        "LocalAxisZ": {
+          "X": 0.063607566,
+          "Y": 0.07919262,
+          "Z": -0.994828
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4EBA\u5DEE\u63073",
+        "Parent": 92,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.2646756,
+          "Y": 11.9886,
+          "Z": 0.3183499
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.62297744,
+          "Y": 0.775617,
+          "Z": 0.10157457
+        },
+        "LocalAxisZ": {
+          "X": 0.063607566,
+          "Y": 0.07919262,
+          "Z": -0.994828
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4E2D\u63071",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.9392586,
+          "Y": 12.436272,
+          "Z": 0.6354853
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.5743766,
+          "Y": 0.81709427,
+          "Z": -0.049482185
+        },
+        "LocalAxisZ": {
+          "X": -0.02845638,
+          "Y": -0.040481124,
+          "Z": -0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4E2D\u63072",
+        "Parent": 94,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.164967,
+          "Y": 12.115078,
+          "Z": 0.6547928
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.5755085,
+          "Y": 0.81629735,
+          "Z": -0.04948217
+        },
+        "LocalAxisZ": {
+          "X": -0.028512426,
+          "Y": -0.04044165,
+          "Z": -0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u4E2D\u63073",
+        "Parent": 95,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.301628,
+          "Y": 11.92118,
+          "Z": 0.6664642
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.5755085,
+          "Y": 0.81629735,
+          "Z": -0.04948217
+        },
+        "LocalAxisZ": {
+          "X": -0.028512426,
+          "Y": -0.04044165,
+          "Z": -0.99877506
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u5C0F\u63071",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.771623,
+          "Y": 12.455803,
+          "Z": 1.093731
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.49873403,
+          "Y": 0.7720739,
+          "Z": -0.3939114
+        },
+        "LocalAxisZ": {
+          "X": -0.21373808,
+          "Y": -0.330881,
+          "Z": -0.9191485
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u5C0F\u63072",
+        "Parent": 97,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.904296,
+          "Y": 12.244056,
+          "Z": 1.1992197
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.49423677,
+          "Y": 0.77496046,
+          "Z": -0.3939114
+        },
+        "LocalAxisZ": {
+          "X": -0.21181087,
+          "Y": -0.332118,
+          "Z": -0.91914845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u5C0F\u63073",
+        "Parent": 98,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.988297,
+          "Y": 12.1081295,
+          "Z": 1.2665888
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.49423677,
+          "Y": 0.77496046,
+          "Z": -0.3939114
+        },
+        "LocalAxisZ": {
+          "X": -0.21181087,
+          "Y": -0.332118,
+          "Z": -0.91914845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u85AC\u63071",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.8783994,
+          "Y": 12.4382715,
+          "Z": 0.8854823
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.5402812,
+          "Y": 0.80995315,
+          "Z": -0.22819291
+        },
+        "LocalAxisZ": {
+          "X": -0.1266295,
+          "Y": -0.18983409,
+          "Z": -0.97361594
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u85AC\u63072",
+        "Parent": 100,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.0729704,
+          "Y": 12.144095,
+          "Z": 0.9672339
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.54321647,
+          "Y": 0.8079876,
+          "Z": -0.22819291
+        },
+        "LocalAxisZ": {
+          "X": -0.12731737,
+          "Y": -0.1893734,
+          "Z": -0.9736159
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u85AC\u63073",
+        "Parent": 101,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -6.185516,
+          "Y": 11.975338,
+          "Z": 1.0142771
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0.54321647,
+          "Y": 0.8079876,
+          "Z": -0.22819291
+        },
+        "LocalAxisZ": {
+          "X": -0.12731737,
+          "Y": -0.1893734,
+          "Z": -0.9736159
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u89AA\u63070",
+        "Parent": 89,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.2830296,
+          "Y": 12.754639,
+          "Z": 0.4729188
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": -0.18090138,
+          "Y": -0.8081542,
+          "Z": -0.5605011
+        },
+        "LocalAxisZ": {
+          "X": 0.96753186,
+          "Y": -0.043952,
+          "Z": -0.24889845
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u89AA\u63071",
+        "Parent": 103,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.3569756,
+          "Y": 12.424294,
+          "Z": 0.24380574
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": -0.17638083,
+          "Y": -0.7880785,
+          "Z": -0.5897645
+        },
+        "LocalAxisZ": {
+          "X": 0.98391116,
+          "Y": -0.12384678,
+          "Z": -0.1287668
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u53F3\u89AA\u63072",
+        "Parent": 104,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -5.403218,
+          "Y": 12.217686,
+          "Z": 0.08918813
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u9996",
+        "Parent": 24,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 107,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.2983706E-16,
+          "Y": 17.928633,
+          "Z": 0.72536236
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.9604645E-08,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -1.5344385E-08,
+          "Y": -9.145966E-16,
+          "Z": 1
+        },
+        "Flags": 2075,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "\u982D",
+        "Parent": 106,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 4.3370506E-16,
+          "Y": 18.71994,
+          "Z": 0.7253623
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 5.9604645E-08,
+          "Y": -1,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": -1.534435E-08,
+          "Y": -9.145945E-16,
+          "Z": 1
+        },
+        "Flags": 2074,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_0",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 114,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.9141766,
+          "Y": 13.334671,
+          "Z": -0.74814856
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_1",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 115,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.8156082,
+          "Y": 13.334671,
+          "Z": -0.874709
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_2",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 116,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.7297847,
+          "Y": 13.334671,
+          "Z": 0.29908162
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_3",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 117,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 0.9141766,
+          "Y": 13.334671,
+          "Z": 1.5994326
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_4",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 118,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -0.8156081,
+          "Y": 13.334671,
+          "Z": 1.725993
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_0_5",
+        "Parent": 7,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 119,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.7297845,
+          "Y": 13.334671,
+          "Z": 0.55220276
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_0",
+        "Parent": 108,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 120,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.2597456,
+          "Y": 7.904413,
+          "Z": -1.3719422
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_1",
+        "Parent": 109,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 121,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.1497918,
+          "Y": 7.904413,
+          "Z": -1.5225316
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_2",
+        "Parent": 110,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 122,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 2.6420052,
+          "Y": 9.778111,
+          "Z": 0.3780778
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_3",
+        "Parent": 111,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 123,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.3759793,
+          "Y": 9.778111,
+          "Z": 2.4292767
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_4",
+        "Parent": 112,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 124,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.2660258,
+          "Y": 9.778111,
+          "Z": 2.579866
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_1_5",
+        "Parent": 113,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 125,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -2.642005,
+          "Y": 9.778111,
+          "Z": 0.67925686
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_0",
+        "Parent": 114,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 126,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.3201944,
+          "Y": 6.2215533,
+          "Z": -1.5983813
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_1",
+        "Parent": 115,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 127,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.2086985,
+          "Y": 6.2215533,
+          "Z": -1.7139004
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_2",
+        "Parent": 116,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 128,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.3337297,
+          "Y": 6.2215533,
+          "Z": 0.4639866
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_3",
+        "Parent": 117,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 129,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.7226126,
+          "Y": 6.2215533,
+          "Z": 3.0988452
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_4",
+        "Parent": 118,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 130,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.6111171,
+          "Y": 6.2215533,
+          "Z": 3.258306
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_2_5",
+        "Parent": 119,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": 131,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.3337295,
+          "Y": 6.2215533,
+          "Z": 0.7829085
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 27,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_0",
+        "Parent": 120,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -2.0000007,
+          "Y": 2.6649945,
+          "Z": -2.198084
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_1",
+        "Parent": 121,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 1.8898938,
+          "Y": 2.6649945,
+          "Z": -2.3604045
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_2",
+        "Parent": 122,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 3.889894,
+          "Y": 2.6649945,
+          "Z": 0.58802414
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_3",
+        "Parent": 123,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": 2.0000002,
+          "Y": 2.6649945,
+          "Z": 3.6987727
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_4",
+        "Parent": 124,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -1.8898938,
+          "Y": 2.6649945,
+          "Z": 3.8610935
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      },
+      {
+        "AppendLocal": false,
+        "Name": "Skirt_3_5",
+        "Parent": 125,
+        "Layer": 0,
+        "AppendParent": -1,
+        "TailBone": -1,
+        "TailOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RestPosition": {
+          "X": -3.8898938,
+          "Y": 2.6649945,
+          "Z": 0.91266596
+        },
+        "FixedAxis": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisX": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "LocalAxisZ": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Flags": 18,
+        "AppendRatio": 0
+      }
+    ],
+    "IkChains": [
+      {
+        "Controller": 17,
+        "Effector": 10,
+        "Iterations": 40,
+        "AngleLimit": 2.0000007,
+        "Links": [
+          {
+            "Bone": 9,
+            "Limited": true,
+            "Minimum": {
+              "X": -3.1415927,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": -0.008726646,
+              "Y": 0,
+              "Z": 0
+            }
+          },
+          {
+            "Bone": 8,
+            "Limited": false,
+            "Minimum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          }
+        ]
+      },
+      {
+        "Controller": 19,
+        "Effector": 14,
+        "Iterations": 40,
+        "AngleLimit": 2.0000007,
+        "Links": [
+          {
+            "Bone": 13,
+            "Limited": true,
+            "Minimum": {
+              "X": -3.1415927,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": -0.008726646,
+              "Y": 0,
+              "Z": 0
+            }
+          },
+          {
+            "Bone": 12,
+            "Limited": false,
+            "Minimum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          }
+        ]
+      },
+      {
+        "Controller": 20,
+        "Effector": 11,
+        "Iterations": 3,
+        "AngleLimit": 4,
+        "Links": [
+          {
+            "Bone": 10,
+            "Limited": false,
+            "Minimum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          }
+        ]
+      },
+      {
+        "Controller": 21,
+        "Effector": 15,
+        "Iterations": 3,
+        "AngleLimit": 4,
+        "Links": [
+          {
+            "Bone": 14,
+            "Limited": false,
+            "Minimum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "Maximum": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          }
+        ]
+      }
+    ],
+    "Order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131
+    ],
+    "Index": {
+      "\u64CD\u4F5C\u4E2D\u5FC3": 0,
+      "\u5168\u3066\u306E\u89AA": 1,
+      "\u30BB\u30F3\u30BF\u30FC2": 2,
+      "\u30BB\u30F3\u30BF\u30FC": 3,
+      "\u30B0\u30EB\u30FC\u30D62": 4,
+      "\u30B0\u30EB\u30FC\u30D6": 5,
+      "\u8170": 6,
+      "\u4E0B\u534A\u8EAB": 7,
+      "\u5DE6\u8DB3": 8,
+      "\u5DE6\u3072\u3056": 9,
+      "\u5DE6\u8DB3\u9996": 10,
+      "\u5DE6\u8DB3\u5148EX": 11,
+      "\u53F3\u8DB3": 12,
+      "\u53F3\u3072\u3056": 13,
+      "\u53F3\u8DB3\u9996": 14,
+      "\u53F3\u8DB3\u5148EX": 15,
+      "\u5DE6\u8DB3IK\u89AA": 16,
+      "\u5DE6\u8DB3IK": 17,
+      "\u53F3\u8DB3IK\u89AA": 18,
+      "\u53F3\u8DB3IK": 19,
+      "\u5DE6\u3064\u307E\u5148IK": 20,
+      "\u53F3\u3064\u307E\u5148IK": 21,
+      "\u4E0A\u534A\u8EAB": 22,
+      "\u4E0A\u534A\u8EAB2": 23,
+      "\u4E0A\u534A\u8EAB3": 24,
+      "Left_Pectoralis_01": 25,
+      "Left_Bust_01_offset": 26,
+      "EX_Left_Bust_01": 27,
+      "\u5DE6\u80A9P": 28,
+      "\u5DE6\u80A9\u002B": 29,
+      "\u5DE6\u80A9": 30,
+      "\u5DE6\u80A9C": 31,
+      "\u5DE6\u8155\u002B": 32,
+      "\u5DE6\u8155": 33,
+      "\u5DE6\u8155\u6369": 34,
+      "\u5DE6\u8155\u63691": 35,
+      "\u5DE6\u8155\u63692": 36,
+      "\u5DE6\u8155\u63693": 37,
+      "Left_ArmRoll": 38,
+      "\u5DE6\u3072\u3058\u002B": 39,
+      "\u5DE6\u3072\u3058": 40,
+      "\u5DE6\u624B\u6369": 41,
+      "\u5DE6\u624B\u63691": 42,
+      "\u5DE6\u624B\u63692": 43,
+      "\u5DE6\u624B\u63693": 44,
+      "Left_ForeArmRoll": 45,
+      "\u5DE6\u624B\u9996\u002B": 46,
+      "\u5DE6\u624B\u9996": 47,
+      "\u5DE6\u30C0\u30DF\u30FC": 48,
+      "\u5DE6\u4EBA\u5DEE\u63071": 49,
+      "\u5DE6\u4EBA\u5DEE\u63072": 50,
+      "\u5DE6\u4EBA\u5DEE\u63073": 51,
+      "\u5DE6\u4E2D\u63071": 52,
+      "\u5DE6\u4E2D\u63072": 53,
+      "\u5DE6\u4E2D\u63073": 54,
+      "\u5DE6\u5C0F\u63071": 55,
+      "\u5DE6\u5C0F\u63072": 56,
+      "\u5DE6\u5C0F\u63073": 57,
+      "\u5DE6\u85AC\u63071": 58,
+      "\u5DE6\u85AC\u63072": 59,
+      "\u5DE6\u85AC\u63073": 60,
+      "\u5DE6\u89AA\u63070": 61,
+      "\u5DE6\u89AA\u63071": 62,
+      "\u5DE6\u89AA\u63072": 63,
+      "Right_BS_acc_01_offset": 64,
+      "EX_Right_BS_acc_01": 65,
+      "Right_BS_acc_end": 66,
+      "Right_Pectoralis_01": 67,
+      "Right_Bust_01_offset": 68,
+      "EX_Right_Bust_01": 69,
+      "\u53F3\u80A9P": 70,
+      "\u53F3\u80A9\u002B": 71,
+      "\u53F3\u80A9": 72,
+      "\u53F3\u80A9C": 73,
+      "\u53F3\u8155\u002B": 74,
+      "\u53F3\u8155": 75,
+      "\u53F3\u8155\u6369": 76,
+      "\u53F3\u8155\u63691": 77,
+      "\u53F3\u8155\u63692": 78,
+      "\u53F3\u8155\u63693": 79,
+      "Right_ArmRoll": 80,
+      "\u53F3\u3072\u3058\u002B": 81,
+      "\u53F3\u3072\u3058": 82,
+      "\u53F3\u624B\u6369": 83,
+      "\u53F3\u624B\u63691": 84,
+      "\u53F3\u624B\u63692": 85,
+      "\u53F3\u624B\u63693": 86,
+      "Right_ForeArmRoll": 87,
+      "\u53F3\u624B\u9996\u002B": 88,
+      "\u53F3\u624B\u9996": 89,
+      "\u53F3\u30C0\u30DF\u30FC": 90,
+      "\u53F3\u4EBA\u5DEE\u63071": 91,
+      "\u53F3\u4EBA\u5DEE\u63072": 92,
+      "\u53F3\u4EBA\u5DEE\u63073": 93,
+      "\u53F3\u4E2D\u63071": 94,
+      "\u53F3\u4E2D\u63072": 95,
+      "\u53F3\u4E2D\u63073": 96,
+      "\u53F3\u5C0F\u63071": 97,
+      "\u53F3\u5C0F\u63072": 98,
+      "\u53F3\u5C0F\u63073": 99,
+      "\u53F3\u85AC\u63071": 100,
+      "\u53F3\u85AC\u63072": 101,
+      "\u53F3\u85AC\u63073": 102,
+      "\u53F3\u89AA\u63070": 103,
+      "\u53F3\u89AA\u63071": 104,
+      "\u53F3\u89AA\u63072": 105,
+      "\u9996": 106,
+      "\u982D": 107,
+      "Skirt_0_0": 108,
+      "Skirt_0_1": 109,
+      "Skirt_0_2": 110,
+      "Skirt_0_3": 111,
+      "Skirt_0_4": 112,
+      "Skirt_0_5": 113,
+      "Skirt_1_0": 114,
+      "Skirt_1_1": 115,
+      "Skirt_1_2": 116,
+      "Skirt_1_3": 117,
+      "Skirt_1_4": 118,
+      "Skirt_1_5": 119,
+      "Skirt_2_0": 120,
+      "Skirt_2_1": 121,
+      "Skirt_2_2": 122,
+      "Skirt_2_3": 123,
+      "Skirt_2_4": 124,
+      "Skirt_2_5": 125,
+      "Skirt_3_0": 126,
+      "Skirt_3_1": 127,
+      "Skirt_3_2": 128,
+      "Skirt_3_3": 129,
+      "Skirt_3_4": 130,
+      "Skirt_3_5": 131
+    },
+    "Warnings": []
+  },
+  "Physics": {
+    "Name": "body",
+    "Fingerprint": "5B967C5DBDB18101D1D81569DBBE63DA508E5DE39D4898ADF7953FD12E5160AC",
+    "Version": 2,
+    "BoneCount": 132,
+    "BoneNames": [
+      "\u64CD\u4F5C\u4E2D\u5FC3",
+      "\u5168\u3066\u306E\u89AA",
+      "\u30BB\u30F3\u30BF\u30FC2",
+      "\u30BB\u30F3\u30BF\u30FC",
+      "\u30B0\u30EB\u30FC\u30D62",
+      "\u30B0\u30EB\u30FC\u30D6",
+      "\u8170",
+      "\u4E0B\u534A\u8EAB",
+      "\u5DE6\u8DB3",
+      "\u5DE6\u3072\u3056",
+      "\u5DE6\u8DB3\u9996",
+      "\u5DE6\u8DB3\u5148EX",
+      "\u53F3\u8DB3",
+      "\u53F3\u3072\u3056",
+      "\u53F3\u8DB3\u9996",
+      "\u53F3\u8DB3\u5148EX",
+      "\u5DE6\u8DB3IK\u89AA",
+      "\u5DE6\u8DB3\uFF29\uFF2B",
+      "\u53F3\u8DB3IK\u89AA",
+      "\u53F3\u8DB3\uFF29\uFF2B",
+      "\u5DE6\u3064\u307E\u5148\uFF29\uFF2B",
+      "\u53F3\u3064\u307E\u5148\uFF29\uFF2B",
+      "\u4E0A\u534A\u8EAB",
+      "\u4E0A\u534A\u8EAB2",
+      "\u4E0A\u534A\u8EAB3",
+      "Left_Pectoralis_01",
+      "Left_Bust_01_offset",
+      "EX_Left_Bust_01",
+      "\u5DE6\u80A9P",
+      "\u5DE6\u80A9\u002B",
+      "\u5DE6\u80A9",
+      "\u5DE6\u80A9C",
+      "\u5DE6\u8155\u002B",
+      "\u5DE6\u8155",
+      "\u5DE6\u8155\u6369",
+      "\u5DE6\u8155\u63691",
+      "\u5DE6\u8155\u63692",
+      "\u5DE6\u8155\u63693",
+      "Left_ArmRoll",
+      "\u5DE6\u3072\u3058\u002B",
+      "\u5DE6\u3072\u3058",
+      "\u5DE6\u624B\u6369",
+      "\u5DE6\u624B\u63691",
+      "\u5DE6\u624B\u63692",
+      "\u5DE6\u624B\u63693",
+      "Left_ForeArmRoll",
+      "\u5DE6\u624B\u9996\u002B",
+      "\u5DE6\u624B\u9996",
+      "\u5DE6\u30C0\u30DF\u30FC",
+      "\u5DE6\u4EBA\u6307\uFF11",
+      "\u5DE6\u4EBA\u6307\uFF12",
+      "\u5DE6\u4EBA\u6307\uFF13",
+      "\u5DE6\u4E2D\u6307\uFF11",
+      "\u5DE6\u4E2D\u6307\uFF12",
+      "\u5DE6\u4E2D\u6307\uFF13",
+      "\u5DE6\u5C0F\u6307\uFF11",
+      "\u5DE6\u5C0F\u6307\uFF12",
+      "\u5DE6\u5C0F\u6307\uFF13",
+      "\u5DE6\u85AC\u6307\uFF11",
+      "\u5DE6\u85AC\u6307\uFF12",
+      "\u5DE6\u85AC\u6307\uFF13",
+      "\u5DE6\u89AA\u6307\uFF10",
+      "\u5DE6\u89AA\u6307\uFF11",
+      "\u5DE6\u89AA\u6307\uFF12",
+      "Right_BS_acc_01_offset",
+      "EX_Right_BS_acc_01",
+      "Right_BS_acc_end",
+      "Right_Pectoralis_01",
+      "Right_Bust_01_offset",
+      "EX_Right_Bust_01",
+      "\u53F3\u80A9P",
+      "\u53F3\u80A9\u002B",
+      "\u53F3\u80A9",
+      "\u53F3\u80A9C",
+      "\u53F3\u8155\u002B",
+      "\u53F3\u8155",
+      "\u53F3\u8155\u6369",
+      "\u53F3\u8155\u63691",
+      "\u53F3\u8155\u63692",
+      "\u53F3\u8155\u63693",
+      "Right_ArmRoll",
+      "\u53F3\u3072\u3058\u002B",
+      "\u53F3\u3072\u3058",
+      "\u53F3\u624B\u6369",
+      "\u53F3\u624B\u63691",
+      "\u53F3\u624B\u63692",
+      "\u53F3\u624B\u63693",
+      "Right_ForeArmRoll",
+      "\u53F3\u624B\u9996\u002B",
+      "\u53F3\u624B\u9996",
+      "\u53F3\u30C0\u30DF\u30FC",
+      "\u53F3\u4EBA\u6307\uFF11",
+      "\u53F3\u4EBA\u6307\uFF12",
+      "\u53F3\u4EBA\u6307\uFF13",
+      "\u53F3\u4E2D\u6307\uFF11",
+      "\u53F3\u4E2D\u6307\uFF12",
+      "\u53F3\u4E2D\u6307\uFF13",
+      "\u53F3\u5C0F\u6307\uFF11",
+      "\u53F3\u5C0F\u6307\uFF12",
+      "\u53F3\u5C0F\u6307\uFF13",
+      "\u53F3\u85AC\u6307\uFF11",
+      "\u53F3\u85AC\u6307\uFF12",
+      "\u53F3\u85AC\u6307\uFF13",
+      "\u53F3\u89AA\u6307\uFF10",
+      "\u53F3\u89AA\u6307\uFF11",
+      "\u53F3\u89AA\u6307\uFF12",
+      "\u9996",
+      "\u982D",
+      "Skirt_0_0",
+      "Skirt_0_1",
+      "Skirt_0_2",
+      "Skirt_0_3",
+      "Skirt_0_4",
+      "Skirt_0_5",
+      "Skirt_1_0",
+      "Skirt_1_1",
+      "Skirt_1_2",
+      "Skirt_1_3",
+      "Skirt_1_4",
+      "Skirt_1_5",
+      "Skirt_2_0",
+      "Skirt_2_1",
+      "Skirt_2_2",
+      "Skirt_2_3",
+      "Skirt_2_4",
+      "Skirt_2_5",
+      "Skirt_3_0",
+      "Skirt_3_1",
+      "Skirt_3_2",
+      "Skirt_3_3",
+      "Skirt_3_4",
+      "Skirt_3_5"
+    ],
+    "RigidBodies": [
+      {
+        "Index": 0,
+        "Name": "\u4E0B\u534A\u8EAB",
+        "EnglishName": "",
+        "BoneIndex": 7,
+        "CollisionGroup": 0,
+        "CollisionMask": 65535,
+        "Shape": 0,
+        "Size": {
+          "X": 0.888,
+          "Y": 0,
+          "Z": 0
+        },
+        "Position": {
+          "X": 0,
+          "Y": 13.373647,
+          "Z": 0.44327596
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 1,
+        "Name": "\u5DE6\u8DB3",
+        "EnglishName": "",
+        "BoneIndex": 8,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 2,
+        "Size": {
+          "X": 0.95,
+          "Y": 5.5367823,
+          "Z": 0
+        },
+        "Position": {
+          "X": 0.8144238,
+          "Y": 9.619731,
+          "Z": 0.44327596
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 2,
+        "Name": "\u53F3\u8DB3",
+        "EnglishName": "",
+        "BoneIndex": 12,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 2,
+        "Size": {
+          "X": 0.95,
+          "Y": 5.536777,
+          "Z": 0
+        },
+        "Position": {
+          "X": -0.81442386,
+          "Y": 9.619723,
+          "Z": 0.4432755
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 3,
+        "Name": "KneeL",
+        "EnglishName": "KneeL",
+        "BoneIndex": 8,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 0,
+        "Size": {
+          "X": 1.7,
+          "Y": 2,
+          "Z": 2
+        },
+        "Position": {
+          "X": 0.7875838,
+          "Y": 7.498771,
+          "Z": 0.30023575
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 4,
+        "Name": "KneeR",
+        "EnglishName": "KneeR",
+        "BoneIndex": 12,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 0,
+        "Size": {
+          "X": 1.7,
+          "Y": 2,
+          "Z": 2
+        },
+        "Position": {
+          "X": -0.71972823,
+          "Y": 7.509016,
+          "Z": 0.21363306
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 5,
+        "Name": "\u53F3\u3072\u3056",
+        "EnglishName": "",
+        "BoneIndex": 13,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 2,
+        "Size": {
+          "X": 1.5,
+          "Y": 5.7072167,
+          "Z": 0
+        },
+        "Position": {
+          "X": -0.81442386,
+          "Y": 4.003483,
+          "Z": 0.62444025
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 6,
+        "Name": "\u5DE6\u3072\u3056",
+        "EnglishName": "",
+        "BoneIndex": 9,
+        "CollisionGroup": 7,
+        "CollisionMask": 65407,
+        "Shape": 2,
+        "Size": {
+          "X": 1.5,
+          "Y": 5.7072215,
+          "Z": 0
+        },
+        "Position": {
+          "X": 0.8144238,
+          "Y": 4.003485,
+          "Z": 0.6244406
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 7,
+        "Name": "\u53F3\u8155",
+        "EnglishName": "",
+        "BoneIndex": 75,
+        "CollisionGroup": 0,
+        "CollisionMask": 65535,
+        "Shape": 2,
+        "Size": {
+          "X": 0.60183936,
+          "Y": 3.0091972,
+          "Z": 0
+        },
+        "Position": {
+          "X": -2.2534757,
+          "Y": 16.416994,
+          "Z": 0.73851615
+        },
+        "RotationEuler": {
+          "X": -0.0064966795,
+          "Y": 0.005850932,
+          "Z": 2.4085352
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 8,
+        "Name": "Right_BS_acc_01_offset",
+        "EnglishName": "",
+        "BoneIndex": 64,
+        "CollisionGroup": 5,
+        "CollisionMask": 65503,
+        "Shape": 2,
+        "Size": {
+          "X": 0.044400193,
+          "Y": 0.22200097,
+          "Z": 0
+        },
+        "Position": {
+          "X": -1.1429137,
+          "Y": 16.942163,
+          "Z": 1.902216
+        },
+        "RotationEuler": {
+          "X": -0.087270096,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.999,
+        "AngularDamping": 0.999,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 1
+      },
+      {
+        "Index": 9,
+        "Name": "EX_Right_BS_acc_01",
+        "EnglishName": "",
+        "BoneIndex": 65,
+        "CollisionGroup": 5,
+        "CollisionMask": 65503,
+        "Shape": 2,
+        "Size": {
+          "X": 0.5327998,
+          "Y": 2.6639988,
+          "Z": 0
+        },
+        "Position": {
+          "X": -1.1429138,
+          "Y": 15.504654,
+          "Z": 2.0279818
+        },
+        "RotationEuler": {
+          "X": -0.08726625,
+          "Y": 1.30866E-08,
+          "Z": -1.5015225E-07
+        },
+        "Mass": 1,
+        "LinearDamping": 0.999,
+        "AngularDamping": 0.999,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 1
+      },
+      {
+        "Index": 10,
+        "Name": "Right_BS_acc_end",
+        "EnglishName": "",
+        "BoneIndex": 66,
+        "CollisionGroup": 5,
+        "CollisionMask": 65503,
+        "Shape": 0,
+        "Size": {
+          "X": 0.111,
+          "Y": 0,
+          "Z": 0
+        },
+        "Position": {
+          "X": -1.1429137,
+          "Y": 14.17772,
+          "Z": 2.1440728
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.999,
+        "AngularDamping": 0.999,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 1
+      },
+      {
+        "Index": 11,
+        "Name": "\u982D",
+        "EnglishName": "",
+        "BoneIndex": 107,
+        "CollisionGroup": 0,
+        "CollisionMask": 65535,
+        "Shape": 0,
+        "Size": {
+          "X": 1.11,
+          "Y": 0,
+          "Z": 0
+        },
+        "Position": {
+          "X": -1.15782E-06,
+          "Y": 20.490688,
+          "Z": 0.56061894
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Mass": 1,
+        "LinearDamping": 0.5,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0.5,
+        "Mode": 0
+      },
+      {
+        "Index": 12,
+        "Name": "Skirt_0_0",
+        "EnglishName": "Skirt_0_0",
+        "BoneIndex": 108,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3,
+          "Y": 2.7,
+          "Z": 0.32
+        },
+        "Position": {
+          "X": -1.1450781,
+          "Y": 10.680257,
+          "Z": -1.0600454
+        },
+        "RotationEuler": {
+          "X": -0.2131962,
+          "Y": -2.6306584,
+          "Z": 3.0492693E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 13,
+        "Name": "Skirt_0_1",
+        "EnglishName": "Skirt_0_1",
+        "BoneIndex": 109,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3,
+          "Y": 2.7,
+          "Z": 0.32
+        },
+        "Position": {
+          "X": 1.040817,
+          "Y": 10.680257,
+          "Z": -1.1986203
+        },
+        "RotationEuler": {
+          "X": -0.21271782,
+          "Y": 2.764467,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 14,
+        "Name": "Skirt_0_2",
+        "EnglishName": "Skirt_0_2",
+        "BoneIndex": 110,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 2,
+          "Y": 1.8362668,
+          "Z": 0.3
+        },
+        "Position": {
+          "X": 2.185895,
+          "Y": 11.556391,
+          "Z": 0.3385797
+        },
+        "RotationEuler": {
+          "X": -0.250057,
+          "Y": 1.6106128,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 15,
+        "Name": "Skirt_0_3",
+        "EnglishName": "Skirt_0_3",
+        "BoneIndex": 111,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 2,
+          "Y": 1.8405855,
+          "Z": 0.32
+        },
+        "Position": {
+          "X": 1.145078,
+          "Y": 11.556391,
+          "Z": 2.0143547
+        },
+        "RotationEuler": {
+          "X": -0.26093447,
+          "Y": 0.51093423,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 16,
+        "Name": "Skirt_0_4",
+        "EnglishName": "Skirt_0_4",
+        "BoneIndex": 112,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 2,
+          "Y": 1.8426266,
+          "Z": 0.32
+        },
+        "Position": {
+          "X": -1.0408169,
+          "Y": 11.556391,
+          "Z": 2.1529295
+        },
+        "RotationEuler": {
+          "X": -0.26357126,
+          "Y": -0.37712568,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 17,
+        "Name": "Skirt_0_5",
+        "EnglishName": "Skirt_0_5",
+        "BoneIndex": 113,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 2,
+          "Y": 1.8369408,
+          "Z": 0.3
+        },
+        "Position": {
+          "X": -2.1858947,
+          "Y": 11.556391,
+          "Z": 0.6157298
+        },
+        "RotationEuler": {
+          "X": -0.25222027,
+          "Y": -1.530978,
+          "Z": 5.3858095E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 18,
+        "Name": "Skirt_1_0",
+        "EnglishName": "Skirt_1_0",
+        "BoneIndex": 114,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1,
+          "Z": 0.6
+        },
+        "Position": {
+          "X": -1.5492963,
+          "Y": 7.135704,
+          "Z": -1.6119465
+        },
+        "RotationEuler": {
+          "X": -0.16394213,
+          "Y": -2.628519,
+          "Z": 3.7759196E-09
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 19,
+        "Name": "Skirt_1_1",
+        "EnglishName": "Skirt_1_1",
+        "BoneIndex": 115,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1,
+          "Z": 0.6
+        },
+        "Position": {
+          "X": 1.4385715,
+          "Y": 7.135704,
+          "Z": -1.7669716
+        },
+        "RotationEuler": {
+          "X": -0.16330214,
+          "Y": 2.7308228,
+          "Z": -3.77552E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 20,
+        "Name": "Skirt_1_2",
+        "EnglishName": "Skirt_1_2",
+        "BoneIndex": 116,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1.8121098,
+          "Z": 1
+        },
+        "Position": {
+          "X": 2.9878674,
+          "Y": 7.999832,
+          "Z": 0.4210322
+        },
+        "RotationEuler": {
+          "X": -0.1913746,
+          "Y": 1.5986128,
+          "Z": 1.517826E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 21,
+        "Name": "Skirt_1_3",
+        "EnglishName": "Skirt_1_3",
+        "BoneIndex": 117,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1.8177997,
+          "Z": 0.6
+        },
+        "Position": {
+          "X": 1.5492959,
+          "Y": 7.999832,
+          "Z": 2.764061
+        },
+        "RotationEuler": {
+          "X": -0.20877573,
+          "Y": 0.5130735,
+          "Z": 7.6159585E-09
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 22,
+        "Name": "Skirt_1_4",
+        "EnglishName": "Skirt_1_4",
+        "BoneIndex": 118,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1.8185486,
+          "Z": 0.6
+        },
+        "Position": {
+          "X": -1.4385715,
+          "Y": 7.999832,
+          "Z": 2.919086
+        },
+        "RotationEuler": {
+          "X": -0.2104706,
+          "Y": -0.41076973,
+          "Z": 3.8093524E-09
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 23,
+        "Name": "Skirt_1_5",
+        "EnglishName": "Skirt_1_5",
+        "BoneIndex": 119,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 3.5,
+          "Y": 1.8123419,
+          "Z": 1
+        },
+        "Position": {
+          "X": -2.9878674,
+          "Y": 7.999832,
+          "Z": 0.7310827
+        },
+        "RotationEuler": {
+          "X": -0.19280295,
+          "Y": -1.54298,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 24,
+        "Name": "Skirt_2_0",
+        "EnglishName": "Skirt_2_0",
+        "BoneIndex": 120,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": -1.8613069,
+          "Y": 4.443274,
+          "Z": -2.0250175
+        },
+        "RotationEuler": {
+          "X": -0.12248463,
+          "Y": -2.6272323,
+          "Z": -4.504093E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 25,
+        "Name": "Skirt_2_1",
+        "EnglishName": "Skirt_2_1",
+        "BoneIndex": 121,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": 1.7505054,
+          "Y": 4.443274,
+          "Z": -2.185908
+        },
+        "RotationEuler": {
+          "X": -0.121256836,
+          "Y": 2.7120843,
+          "Z": 2.8146344E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 26,
+        "Name": "Skirt_2_2",
+        "EnglishName": "Skirt_2_2",
+        "BoneIndex": 122,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": 3.6118119,
+          "Y": 4.443274,
+          "Z": 0.5260054
+        },
+        "RotationEuler": {
+          "X": -0.1543418,
+          "Y": 1.5926118,
+          "Z": 0
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 27,
+        "Name": "Skirt_2_3",
+        "EnglishName": "Skirt_2_3",
+        "BoneIndex": 123,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": 1.8613064,
+          "Y": 4.443274,
+          "Z": 3.398809
+        },
+        "RotationEuler": {
+          "X": -0.18315117,
+          "Y": 0.51436037,
+          "Z": -1.1365971E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 28,
+        "Name": "Skirt_2_4",
+        "EnglishName": "Skirt_2_4",
+        "BoneIndex": 124,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": -1.7505054,
+          "Y": 4.443274,
+          "Z": 3.5596998
+        },
+        "RotationEuler": {
+          "X": -0.18460675,
+          "Y": -0.42950845,
+          "Z": 1.1369048E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      },
+      {
+        "Index": 29,
+        "Name": "Skirt_2_5",
+        "EnglishName": "Skirt_2_5",
+        "BoneIndex": 125,
+        "CollisionGroup": 12,
+        "CollisionMask": 32896,
+        "Shape": 1,
+        "Size": {
+          "X": 4,
+          "Y": 2.5,
+          "Z": 0.8
+        },
+        "Position": {
+          "X": -3.6118116,
+          "Y": 4.443274,
+          "Z": 0.84778726
+        },
+        "RotationEuler": {
+          "X": -0.15586126,
+          "Y": -1.5489818,
+          "Z": -3.7710016E-08
+        },
+        "Mass": 0.3,
+        "LinearDamping": 0.9999,
+        "AngularDamping": 0.5,
+        "Restitution": 0,
+        "Friction": 0,
+        "Mode": 2
+      }
+    ],
+    "Joints": [
+      {
+        "Index": 0,
+        "Name": "Right_BS_acc_01_offset",
+        "EnglishName": "",
+        "Type": 0,
+        "RigidBodyA": 7,
+        "RigidBodyB": 8,
+        "Position": {
+          "X": -0.8652236,
+          "Y": 17.320208,
+          "Z": 1.8925412
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0.83775926
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.17453294,
+          "Y": -0.17453294,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.17453294,
+          "Y": 0.17453294,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 1,
+        "Name": "EX_Right_BS_acc_01",
+        "EnglishName": "",
+        "Type": 0,
+        "RigidBodyA": 8,
+        "RigidBodyB": 9,
+        "Position": {
+          "X": -1.1429137,
+          "Y": 16.831585,
+          "Z": 1.9118907
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.17453294,
+          "Y": -0.17453294,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.17453294,
+          "Y": 0.17453294,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 2,
+        "Name": "Right_BS_acc_end",
+        "EnglishName": "",
+        "Type": 0,
+        "RigidBodyA": 9,
+        "RigidBodyB": 10,
+        "Position": {
+          "X": -1.1429142,
+          "Y": 14.177724,
+          "Z": 2.144073
+        },
+        "RotationEuler": {
+          "X": -0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.17453294,
+          "Y": -0.17453294,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.17453294,
+          "Y": 0.17453294,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 3,
+        "Name": "Skirt_0_0",
+        "EnglishName": "Skirt_0_0",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 12,
+        "Position": {
+          "X": -0.9141766,
+          "Y": 13.334671,
+          "Z": -0.74814856
+        },
+        "RotationEuler": {
+          "X": -0.2131962,
+          "Y": -2.6306584,
+          "Z": 3.0492693E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 4,
+        "Name": "Skirt_0_1",
+        "EnglishName": "Skirt_0_1",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 13,
+        "Position": {
+          "X": 0.8156082,
+          "Y": 13.334671,
+          "Z": -0.874709
+        },
+        "RotationEuler": {
+          "X": -0.21271782,
+          "Y": 2.764467,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 5,
+        "Name": "Skirt_0_2",
+        "EnglishName": "Skirt_0_2",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 14,
+        "Position": {
+          "X": 1.7297847,
+          "Y": 13.334671,
+          "Z": 0.29908162
+        },
+        "RotationEuler": {
+          "X": -0.250057,
+          "Y": 1.6106128,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 6,
+        "Name": "Skirt_0_3",
+        "EnglishName": "Skirt_0_3",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 15,
+        "Position": {
+          "X": 0.9141766,
+          "Y": 13.334671,
+          "Z": 1.5994326
+        },
+        "RotationEuler": {
+          "X": -0.26093447,
+          "Y": 0.51093423,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 7,
+        "Name": "Skirt_0_4",
+        "EnglishName": "Skirt_0_4",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 16,
+        "Position": {
+          "X": -0.8156081,
+          "Y": 13.334671,
+          "Z": 1.725993
+        },
+        "RotationEuler": {
+          "X": -0.26357126,
+          "Y": -0.37712568,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 8,
+        "Name": "Skirt_0_5",
+        "EnglishName": "Skirt_0_5",
+        "Type": 0,
+        "RigidBodyA": 0,
+        "RigidBodyB": 17,
+        "Position": {
+          "X": -1.7297845,
+          "Y": 13.334671,
+          "Z": 0.55220276
+        },
+        "RotationEuler": {
+          "X": -0.25222027,
+          "Y": -1.530978,
+          "Z": 5.3858095E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 9,
+        "Name": "Skirt_1_0",
+        "EnglishName": "Skirt_1_0",
+        "Type": 0,
+        "RigidBodyA": 12,
+        "RigidBodyB": 18,
+        "Position": {
+          "X": -1.2597456,
+          "Y": 7.904413,
+          "Z": -1.3719422
+        },
+        "RotationEuler": {
+          "X": -0.16394213,
+          "Y": -2.628519,
+          "Z": 3.7759196E-09
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 10,
+        "Name": "Skirt_1_1",
+        "EnglishName": "Skirt_1_1",
+        "Type": 0,
+        "RigidBodyA": 13,
+        "RigidBodyB": 19,
+        "Position": {
+          "X": 1.1497918,
+          "Y": 7.904413,
+          "Z": -1.5225316
+        },
+        "RotationEuler": {
+          "X": -0.16330214,
+          "Y": 2.7308228,
+          "Z": -3.77552E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 11,
+        "Name": "Skirt_1_2",
+        "EnglishName": "Skirt_1_2",
+        "Type": 0,
+        "RigidBodyA": 14,
+        "RigidBodyB": 20,
+        "Position": {
+          "X": 2.6420052,
+          "Y": 9.778111,
+          "Z": 0.3780778
+        },
+        "RotationEuler": {
+          "X": -0.1913746,
+          "Y": 1.5986128,
+          "Z": 1.517826E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 12,
+        "Name": "Skirt_1_3",
+        "EnglishName": "Skirt_1_3",
+        "Type": 0,
+        "RigidBodyA": 15,
+        "RigidBodyB": 21,
+        "Position": {
+          "X": 1.3759793,
+          "Y": 9.778111,
+          "Z": 2.4292767
+        },
+        "RotationEuler": {
+          "X": -0.20877573,
+          "Y": 0.5130735,
+          "Z": 7.6159585E-09
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 13,
+        "Name": "Skirt_1_4",
+        "EnglishName": "Skirt_1_4",
+        "Type": 0,
+        "RigidBodyA": 16,
+        "RigidBodyB": 22,
+        "Position": {
+          "X": -1.2660258,
+          "Y": 9.778111,
+          "Z": 2.579866
+        },
+        "RotationEuler": {
+          "X": -0.2104706,
+          "Y": -0.41076973,
+          "Z": 3.8093524E-09
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 14,
+        "Name": "Skirt_1_5",
+        "EnglishName": "Skirt_1_5",
+        "Type": 0,
+        "RigidBodyA": 17,
+        "RigidBodyB": 23,
+        "Position": {
+          "X": -2.642005,
+          "Y": 9.778111,
+          "Z": 0.67925686
+        },
+        "RotationEuler": {
+          "X": -0.19280295,
+          "Y": -1.54298,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 15,
+        "Name": "Skirt_2_0",
+        "EnglishName": "Skirt_2_0",
+        "Type": 0,
+        "RigidBodyA": 18,
+        "RigidBodyB": 24,
+        "Position": {
+          "X": -1.3201944,
+          "Y": 6.2215533,
+          "Z": -1.5983813
+        },
+        "RotationEuler": {
+          "X": -0.12248463,
+          "Y": -2.6272323,
+          "Z": -4.504093E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 16,
+        "Name": "Skirt_2_1",
+        "EnglishName": "Skirt_2_1",
+        "Type": 0,
+        "RigidBodyA": 19,
+        "RigidBodyB": 25,
+        "Position": {
+          "X": 1.2086985,
+          "Y": 6.2215533,
+          "Z": -1.7139004
+        },
+        "RotationEuler": {
+          "X": -0.121256836,
+          "Y": 2.7120843,
+          "Z": 2.8146344E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 17,
+        "Name": "Skirt_2_2",
+        "EnglishName": "Skirt_2_2",
+        "Type": 0,
+        "RigidBodyA": 20,
+        "RigidBodyB": 26,
+        "Position": {
+          "X": 3.3337297,
+          "Y": 6.2215533,
+          "Z": 0.4639866
+        },
+        "RotationEuler": {
+          "X": -0.1543418,
+          "Y": 1.5926118,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 18,
+        "Name": "Skirt_2_3",
+        "EnglishName": "Skirt_2_3",
+        "Type": 0,
+        "RigidBodyA": 21,
+        "RigidBodyB": 27,
+        "Position": {
+          "X": 1.7226126,
+          "Y": 6.2215533,
+          "Z": 3.0988452
+        },
+        "RotationEuler": {
+          "X": -0.18315117,
+          "Y": 0.51436037,
+          "Z": -1.1365971E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 19,
+        "Name": "Skirt_2_4",
+        "EnglishName": "Skirt_2_4",
+        "Type": 0,
+        "RigidBodyA": 22,
+        "RigidBodyB": 28,
+        "Position": {
+          "X": -1.6111171,
+          "Y": 6.2215533,
+          "Z": 3.258306
+        },
+        "RotationEuler": {
+          "X": -0.18460675,
+          "Y": -0.42950845,
+          "Z": 1.1369048E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 20,
+        "Name": "Skirt_2_5",
+        "EnglishName": "Skirt_2_5",
+        "Type": 0,
+        "RigidBodyA": 23,
+        "RigidBodyB": 29,
+        "Position": {
+          "X": -3.3337295,
+          "Y": 6.2215533,
+          "Z": 0.7829085
+        },
+        "RotationEuler": {
+          "X": -0.15586126,
+          "Y": -1.5489818,
+          "Z": -3.7710016E-08
+        },
+        "TranslationMinimum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "TranslationMaximum": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationMinimum": {
+          "X": -0.87266463,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.87266463,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 21,
+        "Name": "Skirt-hori_0_0",
+        "EnglishName": "SkirtSide_0_0",
+        "Type": 0,
+        "RigidBodyA": 12,
+        "RigidBodyB": 13,
+        "Position": {
+          "X": -0.47386032,
+          "Y": 11.406539,
+          "Z": -1.277326
+        },
+        "RotationEuler": {
+          "X": -0.21295649,
+          "Y": -3.0746882,
+          "Z": -5.7170815E-09
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 22,
+        "Name": "Skirt-hori_0_1",
+        "EnglishName": "SkirtSide_0_1",
+        "Type": 0,
+        "RigidBodyA": 13,
+        "RigidBodyB": 14,
+        "Position": {
+          "X": 1.6186259,
+          "Y": 11.406539,
+          "Z": -0.8102819
+        },
+        "RotationEuler": {
+          "X": -0.23138702,
+          "Y": 2.1875415,
+          "Z": 7.65458E-09
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 23,
+        "Name": "Skirt-hori_0_2",
+        "EnglishName": "SkirtSide_0_2",
+        "Type": 0,
+        "RigidBodyA": 14,
+        "RigidBodyB": 15,
+        "Position": {
+          "X": 2.0924861,
+          "Y": 11.465859,
+          "Z": 0.9503947
+        },
+        "RotationEuler": {
+          "X": -0.2554952,
+          "Y": 1.0607744,
+          "Z": 5.3903875E-08
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 24,
+        "Name": "Skirt-hori_0_3",
+        "EnglishName": "SkirtSide_0_3",
+        "Type": 0,
+        "RigidBodyA": 15,
+        "RigidBodyB": 16,
+        "Position": {
+          "X": 0.47386026,
+          "Y": 11.465859,
+          "Z": 2.2440271
+        },
+        "RotationEuler": {
+          "X": -0.26225287,
+          "Y": 0.0669044,
+          "Z": -9.642934E-10
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 25,
+        "Name": "Skirt-hori_0_4",
+        "EnglishName": "SkirtSide_0_4",
+        "Type": 0,
+        "RigidBodyA": 16,
+        "RigidBodyB": 17,
+        "Position": {
+          "X": -1.6186258,
+          "Y": 11.465859,
+          "Z": 1.7769834
+        },
+        "RotationEuler": {
+          "X": -0.25789583,
+          "Y": -0.95405185,
+          "Z": -7.705408E-09
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 26,
+        "Name": "Skirt-hori_0_5",
+        "EnglishName": "SkirtSide_0_5",
+        "Type": 0,
+        "RigidBodyA": 17,
+        "RigidBodyB": 12,
+        "Position": {
+          "X": -2.0924861,
+          "Y": 11.465859,
+          "Z": 0.016306827
+        },
+        "RotationEuler": {
+          "X": -0.23270828,
+          "Y": -2.0808182,
+          "Z": -1.5313942E-08
+        },
+        "TranslationMinimum": {
+          "X": -3,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 3,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.34906587,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.34906587,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 27,
+        "Name": "Skirt-hori_1_0",
+        "EnglishName": "SkirtSide_1_0",
+        "Type": 0,
+        "RigidBodyA": 18,
+        "RigidBodyB": 19,
+        "Position": {
+          "X": -0.6296274,
+          "Y": 7.900198,
+          "Z": -1.8971183
+        },
+        "RotationEuler": {
+          "X": -0.16362233,
+          "Y": -3.0904408,
+          "Z": -4.7196504E-09
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 28,
+        "Name": "Skirt-hori_1_1",
+        "EnglishName": "SkirtSide_1_1",
+        "Type": 0,
+        "RigidBodyA": 19,
+        "RigidBodyB": 20,
+        "Position": {
+          "X": 2.2245326,
+          "Y": 7.900198,
+          "Z": -1.2010452
+        },
+        "RotationEuler": {
+          "X": -0.17733838,
+          "Y": 2.1647174,
+          "Z": -7.569293E-09
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 29,
+        "Name": "Skirt-hori_1_2",
+        "EnglishName": "SkirtSide_1_2",
+        "Type": 0,
+        "RigidBodyA": 20,
+        "RigidBodyB": 21,
+        "Position": {
+          "X": 2.8541598,
+          "Y": 8.021399,
+          "Z": 1.2894
+        },
+        "RotationEuler": {
+          "X": -0.20007497,
+          "Y": 1.0558431,
+          "Z": 7.602233E-09
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 30,
+        "Name": "Skirt-hori_1_3",
+        "EnglishName": "SkirtSide_1_3",
+        "Type": 0,
+        "RigidBodyA": 21,
+        "RigidBodyB": 22,
+        "Position": {
+          "X": 0.6296271,
+          "Y": 8.021399,
+          "Z": 3.0837722
+        },
+        "RotationEuler": {
+          "X": -0.20962323,
+          "Y": 0.051151834,
+          "Z": -2.8564984E-09
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 31,
+        "Name": "Skirt-hori_1_4",
+        "EnglishName": "SkirtSide_1_4",
+        "Type": 0,
+        "RigidBodyA": 22,
+        "RigidBodyB": 23,
+        "Position": {
+          "X": -2.2245326,
+          "Y": 8.021399,
+          "Z": 2.3876991
+        },
+        "RotationEuler": {
+          "X": -0.2016366,
+          "Y": -0.9768747,
+          "Z": -7.604649E-09
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.17453294
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.17453294
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 32,
+        "Name": "Skirt-hori_1_5",
+        "EnglishName": "SkirtSide_1_5",
+        "Type": 0,
+        "RigidBodyA": 23,
+        "RigidBodyB": 18,
+        "Position": {
+          "X": -2.85416,
+          "Y": 8.021399,
+          "Z": -0.102745876
+        },
+        "RotationEuler": {
+          "X": -0.17837253,
+          "Y": -2.0857494,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": -4,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 4,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.17453292,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.17453292,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 33,
+        "Name": "Skirt-hori_2_0",
+        "EnglishName": "SkirtSide_2_0",
+        "Type": 0,
+        "RigidBodyA": 24,
+        "RigidBodyB": 25,
+        "Position": {
+          "X": -0.7479986,
+          "Y": 4.5769377,
+          "Z": -2.3586125
+        },
+        "RotationEuler": {
+          "X": -0.12187069,
+          "Y": -3.0991666,
+          "Z": -3.9876977E-09
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 34,
+        "Name": "Skirt-hori_2_1",
+        "EnglishName": "SkirtSide_2_1",
+        "Type": 0,
+        "RigidBodyA": 25,
+        "RigidBodyB": 26,
+        "Position": {
+          "X": 2.697814,
+          "Y": 4.5769377,
+          "Z": -1.4726982
+        },
+        "RotationEuler": {
+          "X": -0.13779934,
+          "Y": 2.1523476,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 35,
+        "Name": "Skirt-hori_2_2",
+        "EnglishName": "SkirtSide_2_2",
+        "Type": 0,
+        "RigidBodyA": 26,
+        "RigidBodyB": 27,
+        "Position": {
+          "X": 3.4458122,
+          "Y": 4.5769377,
+          "Z": 1.6024905
+        },
+        "RotationEuler": {
+          "X": -0.1687465,
+          "Y": 1.0534855,
+          "Z": -1.5115866E-08
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 36,
+        "Name": "Skirt-hori_2_3",
+        "EnglishName": "SkirtSide_2_3",
+        "Type": 0,
+        "RigidBodyA": 27,
+        "RigidBodyB": 28,
+        "Position": {
+          "X": 0.74799824,
+          "Y": 4.5769377,
+          "Z": 3.7917645
+        },
+        "RotationEuler": {
+          "X": -0.18387884,
+          "Y": 0.04242593,
+          "Z": 4.0259915E-09
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 37,
+        "Name": "Skirt-hori_2_4",
+        "EnglishName": "SkirtSide_2_4",
+        "Type": 0,
+        "RigidBodyA": 28,
+        "RigidBodyB": 29,
+        "Position": {
+          "X": -2.697814,
+          "Y": 4.5769377,
+          "Z": 2.9058497
+        },
+        "RotationEuler": {
+          "X": -0.17023379,
+          "Y": -0.98924506,
+          "Z": -7.5598564E-08
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      },
+      {
+        "Index": 38,
+        "Name": "Skirt-hori_2_5",
+        "EnglishName": "SkirtSide_2_5",
+        "Type": 0,
+        "RigidBodyA": 29,
+        "RigidBodyB": 24,
+        "Position": {
+          "X": -3.4458122,
+          "Y": 4.5769377,
+          "Z": -0.16933845
+        },
+        "RotationEuler": {
+          "X": -0.13917288,
+          "Y": -2.088107,
+          "Z": 0
+        },
+        "TranslationMinimum": {
+          "X": -8,
+          "Y": -0.5,
+          "Z": -1
+        },
+        "TranslationMaximum": {
+          "X": 8,
+          "Y": 0.5,
+          "Z": 1
+        },
+        "RotationMinimum": {
+          "X": -0.5235988,
+          "Y": -0.2617994,
+          "Z": -0.87266463
+        },
+        "RotationMaximum": {
+          "X": 0.5235988,
+          "Y": 0.2617994,
+          "Z": 0.87266463
+        },
+        "TranslationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationSpring": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        }
+      }
+    ],
+    "SoftBodyCount": 0,
+    "TrailingBytes": 0,
+    "Warnings": [],
+    "HasUnsupportedPhysics": false
+  }
+}

@@ -8,6 +8,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<None Update="Fixtures\**\*" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="..\native\SkirtBullet\artifacts\x64\FFMMD.Bullet.dll" Link="FFMMD.Bullet.dll" CopyToOutputDirectory="PreserveNewest" />
 		<!-- 直接编译插件里的纯 .NET 解析层，离线验证 VMD 解析/采样，不进游戏。 -->
 		<Compile Include="..\FFMMD\Vmd\**\*.cs" Link="Vmd\%(Filename)%(Extension)" />
 		<Compile Include="..\FFMMD\Posing\SkeletonData.cs" Link="Posing\SkeletonData.cs" />
@@ -16,5 +17,22 @@
 		<Compile Include="..\FFMMD\Configuration.cs" Link="Configuration.cs" />
 		<Compile Include="..\FFMMD\Player\AudioTransportLogic.cs" Link="Player\AudioTransportLogic.cs" />
 		<Compile Include="..\FFMMD\Player\VariableSpeedSampler.cs" Link="Player\VariableSpeedSampler.cs" />
+		<Compile Include="..\FFMMD\Skirt\NativeBonePhysicsSnapshot.cs" Link="Skirt\NativeBonePhysicsSnapshot.cs" />
+		<Compile Include="..\FFMMD\Skirt\NativePhysicsRead.cs" Link="Skirt\NativePhysicsRead.cs" />
+		<Compile Include="..\FFMMD\Skirt\PhybProfile.cs" Link="Skirt\PhybProfile.cs" />
+		<Compile Include="..\FFMMD\Skirt\PhybProfileReader.cs" Link="Skirt\PhybProfileReader.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtBakeCache.cs" Link="Skirt\SkirtBakeCache.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtBakeBinding.cs" Link="Skirt\SkirtBakeBinding.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtPreprocessor.cs" Link="Skirt\SkirtPreprocessor.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtBullet.cs" Link="Skirt\SkirtBullet.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtLibraryLocator.cs" Link="Skirt\SkirtLibraryLocator.cs" />
+		<Compile Include="..\FFMMD\Skirt\BuiltinSkirtBaker.cs" Link="Skirt\BuiltinSkirtBaker.cs" />
+		<Compile Include="..\FFMMD\Skirt\KinematicColliderDriver.cs" Link="Skirt\KinematicColliderDriver.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtPhysicsReference.cs" Link="Skirt\SkirtPhysicsReference.cs" />
+		<Compile Include="..\FFMMD\Skirt\PmxPhysicsProfile.cs" Link="Skirt\PmxPhysicsProfile.cs" />
+		<Compile Include="..\FFMMD\Skirt\PmxPhysicsProfileReader.cs" Link="Skirt\PmxPhysicsProfileReader.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtTrackSmoothing.cs" Link="Skirt\SkirtTrackSmoothing.cs" />
+		<Compile Include="..\FFMMD\Skirt\SkirtProxyCollisionGuard.cs" Link="Skirt\SkirtProxyCollisionGuard.cs" />
+		<EmbeddedResource Include="..\FFMMD\Skirt\DefaultReference.json" LogicalName="FFMMD.Skirt.DefaultReference.json" />
 	</ItemGroup>
 </Project>

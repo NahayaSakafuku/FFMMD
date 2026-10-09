@@ -195,6 +195,42 @@ internal static class MusicRegression
             Assert(sink.Playing);
         });
 
+        Test("物理准备完成时目标仍无效:Play保持静音，恢复目标后继续", () =>
+        {
+            var sink = new FakeSink { FileLoaded = true };
+            var logic = new AudioTransportLogic(1.5, true, 1f);
+            Fire(logic, sink, TransportAction.Loaded);
+            Fire(logic, sink, TransportAction.TargetSuspendChanged, flag: true);
+            sink.Log.Clear();
+            // The target remains absent. No new suspension edge follows Play.
+            Fire(logic, sink, TransportAction.Play, time: 12, flag: true);
+            Assert(!sink.Playing && !logic.WantsPlayback(true), "unavailable target started music");
+            Assert(sink.LastSeek == 13.5, "pending play did not keep its animation position and offset");
+            Assert(!sink.Log.Contains("play:True"), "music briefly started before the target returned");
+            // Replacing the music or unpausing cannot bypass the suspension.
+            logic.OnFileReplaced(12, sink);
+            Fire(logic, sink, TransportAction.PauseChanged, time: 12, flag: true);
+            Fire(logic, sink, TransportAction.PauseChanged, time: 12, flag: false);
+            Assert(!sink.Playing && !sink.Log.Contains("play:True"), "another transport action bypassed suspension");
+            Fire(logic, sink, TransportAction.TargetSuspendChanged, flag: false);
+            Assert(sink.Playing && logic.WantsPlayback(true), "target recovery lost the play intent");
+            Assert(sink.LastSeek == 13.5, "target recovery reset playback position");
+        });
+
+        Test("默认Play恢复旧的正常播放语义且Stop清除等待意图", () =>
+        {
+            var sink = new FakeSink { FileLoaded = true };
+            var logic = new AudioTransportLogic(-.5, true, 1f);
+            Fire(logic, sink, TransportAction.Play, time: 4, flag: true);
+            Assert(!sink.Playing, "suspended play started music");
+            Fire(logic, sink, TransportAction.Stop);
+            Fire(logic, sink, TransportAction.TargetSuspendChanged, flag: false);
+            Assert(!sink.Playing, "Stop allowed target recovery to revive pending playback");
+            Fire(logic, sink, TransportAction.TargetSuspendChanged, flag: true);
+            Fire(logic, sink, TransportAction.Play, time: 7);
+            Assert(sink.Playing && sink.LastSeek == 6.5, "default Play no longer clears an old suspension");
+        });
+
         Test("速度与动画一致下发", () =>
         {
             var sink = new FakeSink();

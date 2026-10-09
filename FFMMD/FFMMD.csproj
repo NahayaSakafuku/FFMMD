@@ -1,7 +1,7 @@
 <Project Sdk="Dalamud.NET.SDK/15.0.0">
 	<PropertyGroup>
 		<Authors>NahayaSakafuku</Authors>
-		<Version>1.0.1.0</Version>
+		<Version>1.1.0.0</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -15,8 +15,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<EmbeddedResource Include="Skirt\DefaultReference.json" LogicalName="FFMMD.Skirt.DefaultReference.json" />
+		<None Include="..\native\SkirtBullet\artifacts\x64\FFMMD.Bullet.dll" Link="FFMMD.Bullet.dll" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="..\native\SkirtBullet\licenses\*.txt" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
 		<ProjectReference Include="..\vendor\ECommons\ECommons\ECommons.csproj" />
 		<PackageReference Include="NAudio" Version="2.2.1" />
 		<PackageReference Include="NAudio.Vorbis" Version="1.5.0" />
 	</ItemGroup>
+	<Target Name="RequireBuiltinPhysics" BeforeTargets="BeforeBuild">
+		<Error Condition="!Exists('..\native\SkirtBullet\artifacts\x64\FFMMD.Bullet.dll')" Text="Build the bundled physics engine with native/SkirtBullet/Build.ps1 before packaging." />
+	</Target>
 </Project>

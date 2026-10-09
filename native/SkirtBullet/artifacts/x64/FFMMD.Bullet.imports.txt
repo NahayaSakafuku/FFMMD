@@ -1,0 +1,208 @@
+
+File: native/SkirtBullet/artifacts/x64/FFMMD.Bullet.dll
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Import {
+  Name: api-ms-win-crt-runtime-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F650
+  ImportAddressTableRVA: 0x17F940
+  Symbol: _assert (0)
+  Symbol: _beginthreadex (0)
+  Symbol: _errno (0)
+  Symbol: _execute_onexit_table (0)
+  Symbol: _initialize_onexit_table (0)
+  Symbol: _initterm (0)
+  Symbol: _initterm_e (0)
+  Symbol: _register_onexit_function (0)
+  Symbol: abort (0)
+  Symbol: strerror (0)
+}
+Import {
+  Name: api-ms-win-crt-math-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F6A8
+  ImportAddressTableRVA: 0x17F998
+  Symbol: acosf (0)
+  Symbol: asinf (0)
+  Symbol: atan2f (0)
+  Symbol: ceilf (0)
+  Symbol: cosf (0)
+  Symbol: floorf (0)
+  Symbol: fmodf (0)
+  Symbol: powf (0)
+  Symbol: sinf (0)
+  Symbol: sqrtf (0)
+}
+Import {
+  Name: api-ms-win-crt-heap-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F700
+  ImportAddressTableRVA: 0x17F9F0
+  Symbol: _aligned_free (0)
+  Symbol: _aligned_malloc (0)
+  Symbol: calloc (0)
+  Symbol: free (0)
+  Symbol: malloc (0)
+  Symbol: realloc (0)
+}
+Import {
+  Name: api-ms-win-crt-private-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F738
+  ImportAddressTableRVA: 0x17FA28
+  Symbol: memchr (0)
+  Symbol: memcmp (0)
+  Symbol: memcpy (0)
+  Symbol: memmove (0)
+}
+Import {
+  Name: api-ms-win-crt-string-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F760
+  ImportAddressTableRVA: 0x17FA50
+  Symbol: memset (0)
+  Symbol: strcmp (0)
+  Symbol: strlen (0)
+  Symbol: strnlen (0)
+  Symbol: wcslen (0)
+  Symbol: wcsnlen (0)
+}
+Import {
+  Name: api-ms-win-crt-stdio-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F798
+  ImportAddressTableRVA: 0x17FA88
+  Symbol: __acrt_iob_func (0)
+  Symbol: __stdio_common_vfprintf (0)
+  Symbol: fflush (0)
+  Symbol: fputc (0)
+  Symbol: puts (0)
+}
+Import {
+  Name: KERNEL32.dll
+  ImportLookupTableRVA: 0x17F7C8
+  ImportAddressTableRVA: 0x17FAB8
+  Symbol: AcquireSRWLockExclusive (0)
+  Symbol: CloseHandle (0)
+  Symbol: DeleteCriticalSection (0)
+  Symbol: EnterCriticalSection (0)
+  Symbol: FlsAlloc (0)
+  Symbol: FlsGetValue (0)
+  Symbol: FlsSetValue (0)
+  Symbol: GetCurrentThreadId (0)
+  Symbol: GetLastError (0)
+  Symbol: GetModuleHandleW (0)
+  Symbol: GetProcAddress (0)
+  Symbol: GetSystemTimeAsFileTime (0)
+  Symbol: GetThreadId (0)
+  Symbol: GetTickCount (0)
+  Symbol: InitOnceExecuteOnce (0)
+  Symbol: InitializeCriticalSection (0)
+  Symbol: LeaveCriticalSection (0)
+  Symbol: QueryPerformanceCounter (0)
+  Symbol: QueryPerformanceFrequency (0)
+  Symbol: RaiseException (0)
+  Symbol: ReleaseSRWLockExclusive (0)
+  Symbol: RtlCaptureContext (0)
+  Symbol: RtlLookupFunctionEntry (0)
+  Symbol: RtlRestoreContext (0)
+  Symbol: RtlUnwindEx (0)
+  Symbol: RtlVirtualUnwind (0)
+  Symbol: Sleep (0)
+  Symbol: SleepConditionVariableSRW (0)
+  Symbol: SwitchToThread (0)
+  Symbol: TryAcquireSRWLockExclusive (0)
+  Symbol: TryEnterCriticalSection (0)
+  Symbol: VirtualProtect (0)
+  Symbol: VirtualQuery (0)
+  Symbol: WaitForSingleObjectEx (0)
+  Symbol: WakeAllConditionVariable (0)
+  Symbol: WakeConditionVariable (0)
+}
+Import {
+  Name: api-ms-win-crt-environment-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F8F0
+  ImportAddressTableRVA: 0x17FBE0
+  Symbol: getenv (0)
+}
+Import {
+  Name: api-ms-win-crt-filesystem-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F900
+  ImportAddressTableRVA: 0x17FBF0
+  Symbol: _lock_file (0)
+  Symbol: _unlock_file (0)
+}
+Import {
+  Name: api-ms-win-crt-locale-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F918
+  ImportAddressTableRVA: 0x17FC08
+  Symbol: localeconv (0)
+}
+Import {
+  Name: api-ms-win-crt-convert-l1-1-0.dll
+  ImportLookupTableRVA: 0x17F928
+  ImportAddressTableRVA: 0x17FC18
+  Symbol: mbrtowc (0)
+  Symbol: wcrtomb (0)
+}
+Export {
+  Ordinal: 1
+  Name: ffsk_abi_version
+  RVA: 0x12E770
+}
+Export {
+  Ordinal: 2
+  Name: ffsk_body_add
+  RVA: 0x12E9A0
+}
+Export {
+  Ordinal: 3
+  Name: ffsk_body_get_transform
+  RVA: 0x1313F0
+}
+Export {
+  Ordinal: 4
+  Name: ffsk_body_set_position
+  RVA: 0x131210
+}
+Export {
+  Ordinal: 5
+  Name: ffsk_body_set_transform
+  RVA: 0x130CF0
+}
+Export {
+  Ordinal: 6
+  Name: ffsk_collision_disable_pair
+  RVA: 0x130270
+}
+Export {
+  Ordinal: 7
+  Name: ffsk_engine_version
+  RVA: 0x12E780
+}
+Export {
+  Ordinal: 8
+  Name: ffsk_joint_add
+  RVA: 0x12F3A0
+}
+Export {
+  Ordinal: 9
+  Name: ffsk_joint_add_collision_option
+  RVA: 0x12F3B0
+}
+Export {
+  Ordinal: 10
+  Name: ffsk_last_error
+  RVA: 0x12E790
+}
+Export {
+  Ordinal: 11
+  Name: ffsk_world_create
+  RVA: 0x12E7B0
+}
+Export {
+  Ordinal: 12
+  Name: ffsk_world_destroy
+  RVA: 0x12E970
+}
+Export {
+  Ordinal: 13
+  Name: ffsk_world_step
+  RVA: 0x131620
+}

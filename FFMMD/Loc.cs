@@ -154,6 +154,25 @@ public class Strings
     public string MusicFilter = "";
     public string PickPmxTitle = "";
     public string PmxFilter = "";
+    public string NoSkelReady = "";
+    public string SlotTitle = "";        // {0}
+    public string AddSlot = "";
+    public string RemoveSlot = "";
+    public string MusicFollows = "";
+    public string SkirtOfflineTitle = "";
+    public string SkirtBakeNone = "";
+    public string SkirtOfflineStatus = ""; // {0}
+    public string AutoSkirtPhysics = "";
+    public string SkirtPreprocessing = ""; // {0}
+    public string RetrySkirtBake = "";
+    public string CancelSkirtBake = "";
+    public string SkirtPhysicsSettings = "";
+    public string SkirtPhysicsSetupHint = "";
+    public string PickSkirtPhysicsPmx = "";
+    public string PickSkirtPhysicsPmxTitle = "";
+    public string SkirtPhysicsPmxNone = "";
+    public string UseBuiltInPhysicsReference = "";
+    public string DiagSlot = "";
 
     // 调试
     public string DebugSection = "";
@@ -274,6 +293,25 @@ public class Strings
         MusicFilter = "音频(wav / ogg / mp3)",
         PickPmxTitle = "选择动作对应的源 PMX",
         PmxFilter = "MMD 模型",
+        NoSkelReady = "目标骨架尚未就绪",
+        SlotTitle = "角色 {0}",
+        AddSlot = "+ 添加角色槽",
+        RemoveSlot = "移除该角色",
+        MusicFollows = "音乐跟随角色 1 的播放",
+        SkirtOfflineTitle = "裙骨物理",
+        SkirtBakeNone = "尚未准备裙骨物理",
+        SkirtOfflineStatus = "裙骨物理: {0}",
+        AutoSkirtPhysics = "导入动作时自动准备裙骨物理",
+        SkirtPreprocessing = "正在准备裙骨物理 {0:0}%",
+        RetrySkirtBake = "重新准备裙骨物理",
+        CancelSkirtBake = "仅播放身体",
+        SkirtPhysicsSettings = "裙骨物理设置",
+        SkirtPhysicsSetupHint = "导入 VMD 后在后台自动准备裙骨物理,无需额外工具。首次处理新动作需等待,相同动作会复用缓存。可取消裙骨物理,仅播放身体。默认使用内置参考;高级使用可替换参考 PMX,参考模型的体型与裙形会影响效果。",
+        PickSkirtPhysicsPmx = "高级:选择物理参考 PMX…",
+        PickSkirtPhysicsPmxTitle = "选择含 XIV 裙骨与刚体的物理参考 PMX",
+        SkirtPhysicsPmxNone = "使用内置物理参考",
+        UseBuiltInPhysicsReference = "恢复内置参考",
+        DiagSlot = "调试目标: 角色",
 
         DebugSection = "调试:骨架 dump 与映射状态",
         ExportDiag = "导出当前帧诊断(暂停播放)",
@@ -390,6 +428,25 @@ public class Strings
         MusicFilter = "Audio (wav / ogg / mp3)",
         PickPmxTitle = "Select the source PMX for this motion",
         PmxFilter = "MMD model",
+        NoSkelReady = "Target skeleton not ready",
+        SlotTitle = "Character {0}",
+        AddSlot = "+ Add character slot",
+        RemoveSlot = "Remove this character",
+        MusicFollows = "Music follows character 1's playback",
+        SkirtOfflineTitle = "Skirt physics",
+        SkirtBakeNone = "Skirt physics is not prepared",
+        SkirtOfflineStatus = "Skirt physics: {0}",
+        AutoSkirtPhysics = "Prepare skirt physics when importing a motion",
+        SkirtPreprocessing = "Preparing skirt physics {0:0}%",
+        RetrySkirtBake = "Prepare skirt physics again",
+        CancelSkirtBake = "Play body only",
+        SkirtPhysicsSettings = "Skirt physics settings",
+        SkirtPhysicsSetupHint = "Importing a VMD prepares skirt physics in the background with no extra tools. A new motion needs time to prepare; the same motion reuses its cache. Cancel skirt physics to play the body only. The built-in reference is used by default. Advanced users can choose a reference PMX; its body proportions and skirt shape affect the result.",
+        PickSkirtPhysicsPmx = "Advanced: select physics reference PMX...",
+        PickSkirtPhysicsPmxTitle = "Select a physics reference PMX with XIV skirt bones and rigid bodies",
+        SkirtPhysicsPmxNone = "Using the built-in physics reference",
+        UseBuiltInPhysicsReference = "Use built-in reference",
+        DiagSlot = "Debug target: character",
 
         DebugSection = "Debug: skeleton dump & mapping state",
         ExportDiag = "Export current frame diagnostics (pauses playback)",
