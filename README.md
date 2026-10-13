@@ -2,6 +2,14 @@
 
 在 FF14 游戏内直接导入 VMD 并驱动 GPose 人形角色，无需 Blender。支持内置裙骨物理、本地音乐与动作同步播放，以及实验性的多人舞蹈。默认使用标准 MMD A 姿态源骨架，可选 T 姿态或导入动作对应的 PMX 2.0/2.1 骨架。
 
+## 1.1.1.0 更新
+
+- **修复男性硌狮族骨架兼容性**：兼容游戏将 `j_mune_l/r` 胸部骨缩小至约 `1e-6` 的抑制状态，解决无法读取目标骨架、无法播放 VMD 的问题。仅对符合条件的未映射胸部叶骨调整插件内部参考数据，游戏中的胸部姿态与缩放保持原样。
+- **补充骨架初始化失败诊断**：初始化失败也可导出 `skeleton-init` JSON，记录异常骨名、父骨、字段及参考/当前值；普通姿态诊断同时记录内部参考调整。
+- 胸部抑制状态变化时重新校验，保留现有身体、腿 IK、手臂、手指、根部放置、音乐和裙骨物理；没有调整物理参数。
+- 用户已初步实机确认男性硌狮族正常播放；完整离线回归 **276/276** 通过，Release 构建零警告、零错误。更全面的姿态、服装和多人组合仍需持续验证。
+- 升级后部分动作可能需要重新预处理裙骨缓存。完整更新说明见 [v1.1.1.0 Release](https://github.com/NahayaSakafuku/FFMMD/releases/tag/v1.1.1.0)。
+
 ## 1.1.0.0 更新
 
 - **支持裙骨物理**：导入 VMD 后，插件使用内置物理引擎和裙骨参考在本地后台解算，生成可复用的动画缓存。无需安装 Blender、mmd_tools 或额外提供参考模型。
@@ -49,7 +57,7 @@
 3. 保存;在 Dalamud 插件列表搜索 FFMMD 并安装。
 
 **国内网络镜像**(jsDelivr,版本化标签):
-`https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.1.0.0/repo.json`
+`https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.1.1.0/repo.json`
 
 使用旧版本标签镜像的用户，请将仓库地址更新为上述链接以安装本版本。
 
@@ -57,6 +65,8 @@
 
 从 [Releases](https://github.com/NahayaSakafuku/FFMMD/releases) 下载 `latest.zip`,解压到
 `%APPDATA%\XIVLauncherCN\installedPlugins\FFMMD\<版本>\`,重启游戏后在 `/xlplugins` 启用。
+
+**国内下载镜像**：[FFMMD-1.1.1.0.zip](https://cdn.jsdelivr.net/gh/NahayaSakafuku/FFMMD@v1.1.1.0/dist/FFMMD-1.1.1.0.zip)。
 
 ## 构建
 
