@@ -15,16 +15,25 @@ public sealed unsafe partial class Retargeter
         if (tree == null) return false;
         pose->SyncLocalSpace();
         var positions=new System.Numerics.Vector3[tree.BoneCount];
+        var currentPositions=new System.Numerics.Vector3[tree.BoneCount];
         var scales=new System.Numerics.Vector3[tree.BoneCount];
+        var rotations=new System.Numerics.Quaternion[tree.BoneCount];
         for(var i=0;i<tree.BoneCount;i++)
         {
             var local=pose->LocalPose.Data[i];
-            positions[i]=new(local.Translation.X,local.Translation.Y,local.Translation.Z);
+            currentPositions[i]=positions[i]=new(local.Translation.X,local.Translation.Y,local.Translation.Z);
             scales[i]=new(local.Scale.X,local.Scale.Y,local.Scale.Z);
+            rotations[i]=new(local.Rotation.X,local.Rotation.Y,local.Rotation.Z,local.Rotation.W);
             // Animated root translation is not a character-proportion calibration.
             if(tree.Parent[i]<0||tree.Names[i]=="n_hara")positions[i]=tree.RefLocalPos[i];
         }
-        Initialize(new TargetRigProfile(tree,positions,scales), anim, cal);
+        var dimensions=TargetRigDimensions.Create(tree,positions,scales);
+        if(SkeletonInitializationDiagnostic.Inspect(tree,currentPositions,scales,rotations,dimensions.LocalPositions,dimensions.LocalScales) is { } failure)
+        {
+            failure.ManagedReferenceAdjustments=dimensions.SuppressedBreastBones;
+            throw new SkeletonInitializationException(failure);
+        }
+        Initialize(new TargetRigProfile(tree,dimensions), anim, cal);
         _skeleton = ptr;
         return true;
     }
@@ -36,6 +45,15 @@ public sealed unsafe partial class Retargeter
     {
         pose->SyncLocalSpace();
         var tree=Tree!;
+        foreach(var i in Profile!.BreastLeafIndices)
+        {
+            var l=pose->LocalPose.Data[i];
+            var position=new Vector3(l.Translation.X,l.Translation.Y,l.Translation.Z);
+            var scale=new Vector3(l.Scale.X,l.Scale.Y,l.Scale.Z);
+            var suppressed=false;
+            foreach(var bone in Profile.SuppressedBreastBones)if(bone.Index==i){suppressed=true;break;}
+            if(!TargetRigDimensions.MatchesBreastLeafState(position,scale,suppressed))return false;
+        }
         for(var i=0;i<tree.BoneCount;i++)
         {
             if(!_writes[i]||IsArmHelper(i))continue;

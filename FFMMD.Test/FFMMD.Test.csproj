@@ -12,6 +12,7 @@
 		<!-- 直接编译插件里的纯 .NET 解析层，离线验证 VMD 解析/采样，不进游戏。 -->
 		<Compile Include="..\FFMMD\Vmd\**\*.cs" Link="Vmd\%(Filename)%(Extension)" />
 		<Compile Include="..\FFMMD\Posing\SkeletonData.cs" Link="Posing\SkeletonData.cs" />
+		<Compile Include="..\FFMMD\Posing\SkeletonInitializationDiagnostic.cs" Link="Posing\SkeletonInitializationDiagnostic.cs" />
         <Compile Include="..\FFMMD\Retarget\*.cs" Exclude="..\FFMMD\Retarget\Retargeter.cs;..\FFMMD\Retarget\BoneMap.cs" Link="Retarget\%(Filename)%(Extension)" />
 		<Compile Include="..\FFMMD\Retarget\BoneMap.cs" Link="Retarget\BoneMap.cs" />
 		<Compile Include="..\FFMMD\Configuration.cs" Link="Configuration.cs" />

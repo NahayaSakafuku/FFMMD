@@ -8,10 +8,15 @@ public sealed class TargetRigProfile
 {
     public readonly SkeletonTree Skeleton;
     public readonly Vector3 Left,Up,Back;
+    public readonly SuppressedBreastBoneAdjustment[] SuppressedBreastBones;
+    internal readonly int[] BreastLeafIndices;
     public TargetRigProfile(SkeletonTree binding,Vector3[]? effectivePositions=null,Vector3[]? effectiveScales=null)
+        :this(binding,TargetRigDimensions.Create(binding,effectivePositions,effectiveScales)){}
+    internal TargetRigProfile(SkeletonTree binding,TargetRigDimensions dimensions)
     {
+        SuppressedBreastBones=dimensions.SuppressedBreastBones;BreastLeafIndices=dimensions.BreastLeafIndices;
         Skeleton=new SkeletonTree{Names=(string[])binding.Names.Clone(),Parent=(short[])binding.Parent.Clone(),RefLocalRot=(Quaternion[])binding.RefLocalRot.Clone(),
-            RefLocalPos=(Vector3[])(effectivePositions??binding.RefLocalPos).Clone(),RefLocalScale=(Vector3[])(effectiveScales??binding.RefLocalScale).Clone(),SkeletonPtr=binding.SkeletonPtr};
+            RefLocalPos=(Vector3[])dimensions.LocalPositions.Clone(),RefLocalScale=(Vector3[])dimensions.LocalScales.Clone(),SkeletonPtr=binding.SkeletonPtr};
         Skeleton.RebuildReference();
         var l=Skeleton.Find("j_asi_a_l");var r=Skeleton.Find("j_asi_a_r");var pelvis=Skeleton.Find("j_kosi","n_hara");var head=Skeleton.Find("j_kao","j_kubi","j_sebo_a");
         Left=l>=0&&r>=0?RigMath.Direction(Skeleton.RefModelPos[l]-Skeleton.RefModelPos[r],Vector3.UnitX):Vector3.UnitX;

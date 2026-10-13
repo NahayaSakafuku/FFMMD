@@ -73,6 +73,8 @@ var lin = new VmdBezierCurve(new VmdBezier { P1x = 20, P2x = 107, P1y = 20, P2y 
 Check(MathF.Abs(lin.Evaluate(0.3f) - 0.3f) < 1e-3f, "默认 20/107 曲线 ≈ 线性");
 
 failures += RegressionSuite.Run(args.Length > 1 && args[0] == "--verify" ? args[1] : null);
+failures += SkeletonInitializationRegression.Run();
+failures += SuppressedBreastRegression.Run(args.Length > 1 && args[0] == "--verify" ? args[1] : null);
 failures += MusicRegression.Run();
 failures += SkirtConfigurationRegression.Run();
 failures += NativePhysicsRegression.Run();

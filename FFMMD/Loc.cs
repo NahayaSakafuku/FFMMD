@@ -198,6 +198,8 @@ public class Strings
     public string DiagTimeout = "";
     public string DiagExported = "";     // {0}
     public string DiagSaveFailed = "";   // {0}
+    public string SkeletonFailureExported = ""; // {0} {1} {2}
+    public string SkeletonFailureSaveFailed = ""; // {0} {1}
     public string ScaleAudit = "";       // {0} {1} {2}
     public string ScaleNotCaptured = "";
     public string CmdDesc = "";
@@ -335,6 +337,8 @@ public class Strings
         DiagTimeout = "最终观察超时或目标已变化;FinalRender 未捕获。",
         DiagExported = "已导出:{0}",
         DiagSaveFailed = "诊断保存失败:{0}",
+        SkeletonFailureExported = "骨架初始化失败: {0} 根异常骨骼,首个 {1};已导出:{2}",
+        SkeletonFailureSaveFailed = "骨架初始化失败: {0};故障诊断保存失败:{1}",
         ScaleAudit = "{0:0.00}s 缩放变化:写入前后 {1};后续阶段 {2}(分别记录)。",
         ScaleNotCaptured = "未捕获",
         CmdDesc = "打开 FFMMD 播放器",
@@ -470,6 +474,8 @@ public class Strings
         DiagTimeout = "Final-stage observation timed out or the target changed; FinalRender not captured.",
         DiagExported = "Exported: {0}",
         DiagSaveFailed = "Failed to save diagnostics: {0}",
+        SkeletonFailureExported = "Skeleton initialization failed: {0} invalid bones, first {1}; exported: {2}",
+        SkeletonFailureSaveFailed = "Skeleton initialization failed: {0}; failed to save failure diagnostics: {1}",
         ScaleAudit = "{0:0.00}s scale changes: across write {1}; later stages {2} (recorded separately).",
         ScaleNotCaptured = "not captured",
         CmdDesc = "Open the FFMMD player",

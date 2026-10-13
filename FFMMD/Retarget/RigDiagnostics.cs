@@ -80,6 +80,7 @@ public sealed class TargetSkeletonSnapshot
     public Quaternion[] BindLocalRotations=[];
     public Vector3[] EffectiveLocalPositions=[],EffectiveLocalScales=[];
     public bool[] RotationWrites=[];
+    public SuppressedBreastBoneAdjustment[] ManagedReferenceAdjustments=[];
     public Dictionary<string,string> SourceBindings=[];
     public Dictionary<string,string> OrientationSourceBindings=[];
 }
@@ -95,7 +96,7 @@ public static class RigDiagnostics
         live.IkActive.CopyTo(sourcePose.IkActive,0);live.IkTargets.CopyTo(sourcePose.IkTargets,0);live.KneePlanes.CopyTo(sourcePose.KneePlanes,0);
         var report=new RigDiagnosticReport{Frame=frame,SourceName=rig.Name,SourceFingerprint=rig.Fingerprint,ApproximateSource=rig.Approximate,
             Calibration=new(){SourceRestPose=cal.SourceRestPose,MotionScale=cal.MotionScale,YawDegrees=cal.YawDegrees,AutoPositionScale=cal.AutoPositionScale,ManualPositionScale=cal.ManualPositionScale,HeightOffset=cal.HeightOffset,LockHeight=cal.LockHeight,LegIkMode=cal.LegIkMode},SourceBones=rig.Bones,SourceIkChains=rig.IkChains,SourcePose=sourcePose,
-            Target=new(){Names=tree.Names,Parent=tree.Parent,BindLocalRotations=tree.RefLocalRot,EffectiveLocalPositions=tree.RefLocalPos,EffectiveLocalScales=tree.RefLocalScale,RotationWrites=r.RotationWrites.ToArray(),SourceBindings=r.Mapped.ToDictionary(m=>m.FfName,m=>m.SourceJp),OrientationSourceBindings=r.Mapped.ToDictionary(m=>m.FfName,m=>rig.Bones[m.OrientationSourceIndex].Name)},
+            Target=new(){Names=tree.Names,Parent=tree.Parent,BindLocalRotations=tree.RefLocalRot,EffectiveLocalPositions=tree.RefLocalPos,EffectiveLocalScales=tree.RefLocalScale,RotationWrites=r.RotationWrites.ToArray(),ManagedReferenceAdjustments=r.Profile!.SuppressedBreastBones,SourceBindings=r.Mapped.ToDictionary(m=>m.FfName,m=>m.SourceJp),OrientationSourceBindings=r.Mapped.ToDictionary(m=>m.FfName,m=>rig.Bones[m.OrientationSourceIndex].Name)},
             TargetLegGoals=r.LegGoals.ToArray(),TargetLegPoles=r.LegPoles.ToArray(),Prepared=new(){LocalPositions=r.LocalPositions.ToArray(),LocalRotations=r.LocalRotations.ToArray(),ModelPositions=r.ModelPositions.ToArray(),ModelRotations=r.ModelRotations.ToArray(),LocalScales=tree.RefLocalScale,ModelScales=tree.RefModelScale}};
         if(r.CenterBoneIndex>=0)report.PreparedCenterY=r.ModelPositions[r.CenterBoneIndex].Y;
         if(r.HeightRootIndex>=0){report.HeightAnchorY=tree.RefModelPos[r.HeightRootIndex].Y+cal.HeightOffset;report.PreparedRootY=r.ModelPositions[r.HeightRootIndex].Y;}

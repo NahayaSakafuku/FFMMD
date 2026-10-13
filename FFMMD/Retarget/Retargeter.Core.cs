@@ -49,7 +49,9 @@ public sealed partial class Retargeter
         Mapped.Clear();UnmappedMmd.Clear();CenterBoneIndex=HeightRootIndex=-1;AutoPosScale=-1;Array.Clear(IkTrack);_sourcePreset=-1;
     }
     internal void TestSetup(SkeletonTree tree,VmdAnimation anim,Calibration cal,SourceRigDefinition? rig=null)
-    {_explicitRig=rig;Initialize(new TargetRigProfile(tree),anim,cal);}
+    {TestSetup(new TargetRigProfile(tree),anim,cal,rig);}
+    internal void TestSetup(TargetRigProfile profile,VmdAnimation anim,Calibration cal,SourceRigDefinition? rig=null)
+    {_explicitRig=rig;Initialize(profile,anim,cal);}
     private void Initialize(TargetRigProfile profile,VmdAnimation? anim,Calibration cal)
     {
         Profile=profile;Tree=profile.Skeleton;_anim=anim;_sourcePreset=cal.SourceRestPose;

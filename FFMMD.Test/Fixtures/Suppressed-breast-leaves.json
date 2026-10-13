@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "j_mune_l",
+    "ReferenceLocalPosition": { "X": 0.11056709, "Y": 8.381903E-09, "Z": 0.07320845 },
+    "ReferenceLocalScale": { "X": 1.0000002, "Y": 1.0000002, "Z": 1 },
+    "ReferenceLocalRotation": { "X": -0.7257079, "Y": -0.6785303, "Z": -0.07961081, "W": 0.08128248 },
+    "CurrentLocalPosition": { "X": -1.3009796, "Y": 0.59343374, "Z": -0.09440817 },
+    "CurrentLocalScale": { "X": 9.999995E-07, "Y": 1E-06, "Z": 9.999993E-07 },
+    "CurrentLocalRotation": { "X": -0.63056713, "Y": -0.46407133, "Z": -0.5490777, "W": 0.29246417 }
+  },
+  {
+    "Name": "j_mune_r",
+    "ReferenceLocalPosition": { "X": 0.11056721, "Y": 4.1909516E-08, "Z": -0.07320833 },
+    "ReferenceLocalScale": { "X": 1.0000002, "Y": 1.0000002, "Z": 1.0000001 },
+    "ReferenceLocalRotation": { "X": -0.7257079, "Y": -0.67853034, "Z": 0.07961081, "W": -0.08128239 },
+    "CurrentLocalPosition": { "X": -1.3009795, "Y": 0.59343374, "Z": -0.09440829 },
+    "CurrentLocalScale": { "X": 9.999994E-07, "Y": 9.999994E-07, "Z": 9.999987E-07 },
+    "CurrentLocalRotation": { "X": -0.50774145, "Y": -0.4395605, "Z": -0.7342793, "W": -0.09908402 }
+  }
+]

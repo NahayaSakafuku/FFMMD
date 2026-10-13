@@ -86,6 +86,9 @@ public sealed unsafe class PlayerSlot
     private bool _wasEnvironment;
     private long _lastDiagMs = -1;
     private string? _lastDiag;
+    private string? _lastSkeletonFailure, _skeletonFailureStatus;
+    private nint _lastSkeletonFailureTarget;
+    private long _lastSkeletonFailureMs = -1;
 
     /// <summary> 目标游戏对象的地址(每帧从它重新解析 CharacterBase,避免缓存指针失效)。 </summary>
     public nint TargetGameObjectAddress;
@@ -477,7 +480,7 @@ public sealed unsafe class PlayerSlot
         {
             try
             {
-                if (Retargeter.EnsureSkeleton(pose, Anim, P.Config.Cal))
+                if (EnsureTargetSkeleton(pose))
                 {
                     _partials.Prepare(((CharacterBase*)TargetCharaBase)->Skeleton, Retargeter.Tree!);
                     _preparedFrame = (float)(TimeSec * Vmd.VmdAnimation.FramesPerSecond);
@@ -857,6 +860,71 @@ public sealed unsafe class PlayerSlot
         PluginLog.Information($"[FFMMD] {msg}");
     }
 
+    private bool EnsureTargetSkeleton(FFXIVClientStructs.Havok.Animation.Rig.hkaPose* pose, bool forceFailureReport = false)
+    {
+        try
+        {
+            var previousProfile = Retargeter.Profile;
+            var ready = Retargeter.EnsureSkeleton(pose, Anim, P.Config.Cal);
+            if (ready)
+            {
+                if (DiagnosticStatus == _skeletonFailureStatus) DiagnosticStatus = null;
+                if (!ReferenceEquals(previousProfile, Retargeter.Profile) && Retargeter.Profile is { } profile &&
+                    profile.SuppressedBreastBones.Length > 0)
+                    PluginLog.Information($"[FFMMD] slot{Index + 1} SuppressedBreastLeafReference: " +
+                        string.Join(", ", profile.SuppressedBreastBones.Select(bone => bone.Name)) + "; native transforms preserved.");
+            }
+            return ready;
+        }
+        catch (Posing.SkeletonInitializationException e)
+        {
+            _prepared = _offlineSkirtPrepared = false;
+            Retargeter.ResetCache();
+            SaveSkeletonInitializationFailure(e, forceFailureReport || _diagnosticRequested);
+            _diagnosticRequested = false; _diagnostic = null;
+            _diagnosticTree = null; _diagnosticAnimation = null;
+            Volatile.Write(ref _diagnosticReady, 0);
+            _nativePhysics.Invalidate("Skeleton initialization failed");
+            return false;
+        }
+    }
+
+    private void SaveSkeletonInitializationFailure(Posing.SkeletonInitializationException error, bool force)
+    {
+        var report = error.Diagnostic;
+        var jsonOptions = new JsonSerializerOptions { IncludeFields = true, WriteIndented = true };
+        var signature = $"{_targetId}:{report.InvalidBoneCount}:" + string.Join("|",
+            report.Bones.Select(bone => $"{bone.Index}:{string.Join(",", bone.InvalidFields)}"));
+        var now = Environment.TickCount64;
+        if (!force && signature == _lastSkeletonFailure && TargetCharaBase == _lastSkeletonFailureTarget &&
+            now - _lastSkeletonFailureMs < 30000)
+        {
+            DiagnosticStatus = _skeletonFailureStatus;
+            return;
+        }
+        _lastSkeletonFailure = signature; _lastSkeletonFailureTarget = TargetCharaBase; _lastSkeletonFailureMs = now;
+        report.Slot = Index + 1; report.TargetName = TargetName; report.TargetObjectIndex = _targetIndex;
+        report.TargetId = $"0x{_targetId:X}"; report.MotionPath = LoadedPath ?? "";
+        report.Frame = double.IsFinite(TimeSec) ? TimeSec * Vmd.VmdAnimation.FramesPerSecond : 0;
+        PluginLog.Warning($"[FFMMD] slot{Index + 1} SkeletonInitializationFailure: {error.Message}");
+        try
+        {
+            var directory = Path.Combine(Svc.PluginInterface.GetPluginConfigDirectory(), "diagnostics");
+            Directory.CreateDirectory(directory);
+            var path = Path.Combine(directory, $"FFMMD-slot{Index + 1}-skeleton-init-{DateTime.Now:yyyyMMdd-HHmmss-fff}-{Guid.NewGuid():N}.json");
+            using (var stream = new FileStream(path, FileMode.CreateNew, FileAccess.Write))
+                JsonSerializer.Serialize(stream, report, jsonOptions);
+            DiagnosticStatus = string.Format(Loc.S.SkeletonFailureExported, report.InvalidBoneCount, report.Bones[0].Name, path);
+            PluginLog.Information($"[FFMMD] {DiagnosticStatus}");
+        }
+        catch (Exception e)
+        {
+            DiagnosticStatus = string.Format(Loc.S.SkeletonFailureSaveFailed, error.Message, e.Message);
+            PluginLog.Warning($"[FFMMD] {DiagnosticStatus}");
+        }
+        _skeletonFailureStatus = DiagnosticStatus;
+    }
+
     /// <summary> 供 DebugTab 使用:不播放也能构建骨架缓存(仅建立映射/dump,不写骨骼)。 </summary>
     public bool TryBuildDebugTree()
     {
@@ -867,7 +935,7 @@ public sealed unsafe class PlayerSlot
     {
         ResolveTarget();
         if (!TryGetLivePose(out var pose)) return false;
-        return Retargeter.EnsureSkeleton(pose, Anim, P.Config.Cal);
+        return EnsureTargetSkeleton(pose, forceFailureReport: true);
     }
 
     public List<string> DiagnoseCurrentFrame()
